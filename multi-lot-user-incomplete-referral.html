@@ -1,0 +1,114 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h1 class="govuk-fieldset__heading">
+                Geographical area
+              </h1>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                  LOT 1
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                  LOT 2
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+                  LOT 3
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+                <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+                  LOT 4
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button type="submit" class="govuk-button" data-module="govuk-button">
+          Apply filters
+        </button>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Incomplete referrals</h1>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Surname</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">First name</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Preferred name</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Nino / crn</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Date submitted</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">Ben</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">T734HF54</td>
+              <td class="govuk-table__cell">25 January 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Michael</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">SG54G5GG </td>
+              <td class="govuk-table__cell">27 January 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">Collins</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell"> HYTH4564</td>
+              <td class="govuk-table__cell">28 December 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">  </td>
+              <td class="govuk-table__cell">Jack</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">CDE4435C</td>
+              <td class="govuk-table__cell">20 January 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
