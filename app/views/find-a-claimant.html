@@ -1,0 +1,62 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form id="find-a-claimant-form" class="form" action="results.html">
+        <input type="hidden" name="_csrf" value="">
+        <fieldset class="govuk-fieldset">
+  
+  <legend class="govuk-fieldset__legend govuk-caption-l">
+  
+    <h1 class="govuk-fieldset__heading">
+      <span class="govuk-caption-l">Find a claimant</span>
+    </h1>
+  
+  </legend>
+  
+
+</fieldset>
+
+
+        
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label--l" for="search-term">
+    Enter the claimant's name or National Insurance number
+  </label>
+
+  
+  
+  <div id="search-term-hint" class="govuk-hint">
+    For example, 'Jane Doe' or ‘QQ 12 34 56 C’
+  </div>
+
+<input class="govuk-input govuk-input--width-full" id="search-term" name="search-term" type="text" spellcheck="false" aria-describedby="search-term-hint" maxlength="72" autocomplete="off">
+
+</div>        
+    
+  
+
+<button type="submit" class="govuk-button" data-module="govuk-button" id="search">
+  Search
+</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
