@@ -1,0 +1,76 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Select LOT 
+          </h1>
+        </legend>
+        <div id="filters-hint" class="govuk-hint">
+          Select LOT area you want to view for referrals
+        </div>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            </legend>
+            <div class="govuk-radios" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="lot" name="lot" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="lot">
+                  LOT 1
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="lot-2" name="lot" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="lot-2">
+                  LOT 2
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="lot-3" name="lot" type="radio" value="wales">
+                <label class="govuk-label govuk-radios__label" for="lot-3">
+                  LOT 3
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="lot-4" name="lot" type="radio" value="northern-ireland">
+                <label class="govuk-label govuk-radios__label" for="lot-4">
+                  LOT 4
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </fieldset>
+    </div>
+
+
+<button type="submit" class="govuk-button" data-module="govuk-button" id="filter">
+Continue
+</button>
+
+    </form>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+{% endblock %}

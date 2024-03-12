@@ -7,3 +7,12 @@
 .govuk-width-container {
   min-width: 1100px;
   }
+
+[value="lot1"]:checked ~  tr[data-category="lot1"],
+[value="lot2"]:checked ~ tr[data-category="lot2"],
+[value="lot3"]:checked ~ tr[data-category="lot3"],
+[value="lot4"]:checked ~ tr[data-category="lot4"]
+{
+  animation: fadeOut .25s;
+  display: none;
+}
