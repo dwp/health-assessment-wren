@@ -28,25 +28,25 @@
             </legend>
             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="lot1" name="organisation" type="checkbox" value="hmrc">
+                <input class="govuk-checkboxes__input" id="lot1" name="organisation" type="checkbox" value="lot1" checked>
                 <label class="govuk-label govuk-checkboxes__label" for="lot1">
                   LOT 1
                 </label>
               </div>
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="lot2" name="organisation" type="checkbox" value="employment-tribunal">
+                <input class="govuk-checkboxes__input" id="lot2" name="organisation" type="checkbox" value="lot2" checked>
                 <label class="govuk-label govuk-checkboxes__label" for="lot2">
                   LOT 2
                 </label>
               </div>
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="lot3" name="organisation" type="checkbox" value="MOD">
+                <input class="govuk-checkboxes__input" id="lot3" name="organisation" type="checkbox" value="lot3" checked>
                 <label class="govuk-label govuk-checkboxes__label" for="lot3">
                   LOT 3
                 </label>
               </div>
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="lot4" name="organisation" type="checkbox" value="DfT">
+                <input class="govuk-checkboxes__input" id="lot4" name="organisation" type="checkbox" value="lot4" checked>
                 <label class="govuk-label govuk-checkboxes__label" for="lot4">
                   LOT 4
                 </label>
@@ -54,7 +54,7 @@
             </div>
           </fieldset>
         </div>
-        <button type="submit" class="govuk-button" data-module="govuk-button">
+        <button type="submit" id="applyFiltersButton" class="govuk-button" data-module="govuk-button">
           Apply filters
         </button>
       </div>
@@ -115,5 +115,22 @@
     </div>
   </main>
 </div>
-
+<script>
+  document
+    .getElementById("applyFiltersButton")
+    .addEventListener("click", function () {
+      var checkedCheckboxes = document.querySelectorAll(
+        'input[name="organisation"]:checked'
+      );
+      var rows = document.querySelectorAll("#mytable tbody tr");
+      rows.forEach(function (row) {
+        row.style.display = "none";
+        checkedCheckboxes.forEach(function (checkbox) {
+          if (row.getAttribute("data-category") === checkbox.value) {
+            row.style.display = "";
+          }
+        });
+      });
+    });
+</script>
 {% endblock %}
