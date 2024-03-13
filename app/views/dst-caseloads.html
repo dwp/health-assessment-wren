@@ -1,0 +1,163 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+{% block content %}
+  
+      <div class="govuk-width-container">
+
+          <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content">
+              
+<div class="govuk-grid-row">
+  
+      <div class="govuk-grid-column-full">
+  
+      <h1 class="govuk-heading-l">
+        
+        Data Segregation Test referrals in LOT 1
+      </h1>
+      
+   
+<table class="govuk-table has-sortable-table" data-count="2">
+
+
+<thead class="govuk-table__head">
+  <tr class="govuk-table__row">
+  
+    <th scope="col" class="govuk-table__header" id="name-header">Claimant name</th>
+  
+    <th scope="col" class="govuk-table__header has-width-fifteen-percent" id="nino-header">NI number</th>
+  
+    <th scope="col" class="govuk-table__header" id="benefit-type-header">Benefit</th>
+  
+    <th scope="col" class="govuk-table__header" id="referral-date-header">Referral date</th>
+  
+    <th scope="col" class="govuk-table__header" id="srel-header">End of life</th>
+  
+    <th scope="col" class="govuk-table__header has-width-fifteen-percent" id="status-header">Status</th>
+  
+    <th scope="col" class="govuk-table__header has-width-fifteen-percent" id="due-date-header">Next action due in</th>
+  
+  </tr>
+</thead>
+
+<tbody class="govuk-table__body">
+  
+    
+      <tr class="govuk-table__row">
+      
+        
+        
+        <td class="govuk-table__cell" id="claimant-display-name-1" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/ab5aa78a-6b0d-43d3-9f9d-6f1adf498e44" class="govuk-link">Rhonda Feil</a></td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="nino-1" data-label="NI number">
+<span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>B</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>20</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>81</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>58</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="benefit-type-1" data-label="Benefit">ESA</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell referral-date-name-col" id="referral-date-1" data-label="Referral date">2 Feb 2024</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="srel-1" data-label="End of life">Yes</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="status-1" data-label="Status">Assigned</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="due-date-1" data-label="Next action due in"><strong class="govuk-tag govuk-tag--red">
+14 DAYS OVERDUE
+</strong>
+</td>
+        
+      
+      </tr>
+    
+  
+    
+      <tr class="govuk-table__row">
+      
+        
+        
+        <td class="govuk-table__cell" id="claimant-display-name-2" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/0633e6d3-bd0f-4b82-908e-6dc5abde2166" class="govuk-link">Joey Hintz</a></td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="nino-2" data-label="NI number">
+<span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>55</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>00</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>13</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="benefit-type-2" data-label="Benefit">ESA</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell referral-date-name-col" id="referral-date-2" data-label="Referral date">2 Feb 2024</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="srel-2" data-label="End of life">Yes</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="status-2" data-label="Status">Assigned</td>
+        
+      
+        
+        
+        <td class="govuk-table__cell" id="due-date-2" data-label="Next action due in"><strong class="govuk-tag govuk-tag--red">
+14 DAYS OVERDUE
+</strong>
+</td>
+        
+      
+      </tr>
+    
+  
+</tbody>
+</table>
+
+
+        
+        <nav class="moj-pagination" aria-label="Pagination navigation">
+
+<ul class="moj-pagination__list"></ul>
+  <p class="moj-pagination__results">Showing <b>1</b> to <b>2</b> of <b>2</b> referrals</p>
+</nav>
+
+      
+  </div>
+</div>
+
+          </main>
+      </div>
+
+</div>
+  
+{% endblock %}
