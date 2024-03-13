@@ -14,8 +14,8 @@
 {% block content %}
 
 <div class="govuk-width-container">
-  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content">
-                  
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-quarter">
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
@@ -26,25 +26,25 @@
             </legend>
             <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="lot1" checked>
                 <label class="govuk-label govuk-checkboxes__label" for="organisation">
                   LOT 1
                 </label>
               </div>
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="lot2">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
                   LOT 2
                 </label>
               </div>
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+                <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="lot3">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
                   LOT 3
                 </label>
               </div>
               <div class="govuk-checkboxes__item">
-                <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+                <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="lot4">
                 <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
                   LOT 4
                 </label>
@@ -79,6 +79,8 @@
           <th scope="col" class="govuk-table__header" id="referral-date-header">Referral date</th>
         
           <th scope="col" class="govuk-table__header" id="srel-header">End of life</th>
+
+          <th scope="col" class="govuk-table__header" id="srel-header">LOT number</th>
         
           <th scope="col" class="govuk-table__header" id="status-header">Status</th>
         
@@ -114,9 +116,9 @@
               
               
               <td class="govuk-table__cell" id="srel-1" data-label="End of life">Yes</td>
-              
+
             
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
               <td class="govuk-table__cell" id="status-1" data-label="Status">Assigned</td>
               
@@ -151,6 +153,7 @@
               
               
               <td class="govuk-table__cell" id="srel-2" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -188,6 +191,7 @@
               
               
               <td class="govuk-table__cell" id="srel-3" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -225,6 +229,7 @@
               
               
               <td class="govuk-table__cell" id="srel-4" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -262,6 +267,7 @@
               
               
               <td class="govuk-table__cell" id="srel-5" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -299,6 +305,7 @@
               
               
               <td class="govuk-table__cell" id="srel-6" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -336,6 +343,7 @@
               
               
               <td class="govuk-table__cell" id="srel-7" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -373,6 +381,7 @@
               
               
               <td class="govuk-table__cell" id="srel-8" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -411,6 +420,7 @@
               
               
               <td class="govuk-table__cell" id="srel-26" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -448,6 +458,7 @@
               
               
               <td class="govuk-table__cell" id="srel-27" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -485,6 +496,7 @@
               
               
               <td class="govuk-table__cell" id="srel-28" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -522,6 +534,7 @@
               
               
               <td class="govuk-table__cell" id="srel-29" data-label="End of life">Yes</td>
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -537,7 +550,9 @@
       <div class="moj-pagination" aria-label="Pagination navigation">
     
         <ul class="moj-pagination__list"></ul>
-        <p class="moj-pagination__results">Showing <b>1</b> to <b>45</b> of <b>45</b> referrals</p>
+        <p class="moj-pagination__results">Showing <b>1</b> to <b>12</b> of <b>12</b> referrals</p>
+        <div class="govuk-!-padding-bottom-9"></div>
+
       </div>
         <h1 class="govuk-heading-l">          
           Results for 'John Smith' outside your LOT/provider 
@@ -558,6 +573,7 @@
         <th scope="col" class="govuk-table__header" id="referral-date-header">Referral date</th>
       
         <th scope="col" class="govuk-table__header" id="srel-header">End of life</th>
+        <th scope="col" class="govuk-table__header" id="srel-header">Lot number</th>
       
         <th scope="col" class="govuk-table__header" id="status-header">Status</th>
       
@@ -593,7 +609,7 @@
             
             
             <td class="govuk-table__cell" id="srel-1" data-label="End of life">Yes</td>
-            
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
           
             
             
@@ -630,6 +646,7 @@
             
             
             <td class="govuk-table__cell" id="srel-2" data-label="End of life">Yes</td>
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
             
           
             
@@ -667,6 +684,7 @@
             
             
             <td class="govuk-table__cell" id="srel-3" data-label="End of life">Yes</td>
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
             
           
             
@@ -704,6 +722,7 @@
             
             
             <td class="govuk-table__cell" id="srel-4" data-label="End of life">Yes</td>
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
             
           
             
@@ -741,6 +760,7 @@
             
             
             <td class="govuk-table__cell" id="srel-5" data-label="End of life">Yes</td>
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
             
           
             
@@ -778,6 +798,7 @@
             
             
             <td class="govuk-table__cell" id="srel-6" data-label="End of life">Yes</td>
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">4</td>
             
           
             
@@ -815,6 +836,7 @@
             
             
             <td class="govuk-table__cell" id="srel-7" data-label="End of life">Yes</td>
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">4</td>
             
           
             
@@ -852,6 +874,7 @@
             
             
             <td class="govuk-table__cell" id="srel-8" data-label="End of life">Yes</td>
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">4</td>
             
           
             
@@ -863,128 +886,19 @@
         
       
         
-          <tr class="govuk-table__row">
           
-            
-            
-            <td class="govuk-table__cell" id="claimant-display-name-9" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/1019251a-9869-4d64-aba0-681c91148113" class="govuk-link">John Smith</a></td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="nino-9" data-label="NI number">
-    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="benefit-type-9" data-label="Benefit">UC</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell referral-date-name-col" id="referral-date-9" data-label="Referral date">12 Jan 2024</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="srel-9" data-label="End of life">Yes</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="status-9" data-label="Status">Assigned</td>
-            
-          
-          </tr>
-        
-      
-        
-          <tr class="govuk-table__row">
-          
-            
-            
-            <td class="govuk-table__cell" id="claimant-display-name-10" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/d69076aa-8f39-45bf-b5a6-159d50fb1191" class="govuk-link">John Smith</a></td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="nino-10" data-label="NI number">
-    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="benefit-type-10" data-label="Benefit">PIP</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell referral-date-name-col" id="referral-date-10" data-label="Referral date">12 Jan 2024</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="srel-10" data-label="End of life">Yes</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="status-10" data-label="Status">Assigned</td>
-            
-          
-          </tr>
-        
-      
-        
-          <tr class="govuk-table__row">
-          
-            
-            
-            <td class="govuk-table__cell" id="claimant-display-name-11" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/620c5d55-591b-4dc7-a4ab-735212e414ad" class="govuk-link">John Smith</a></td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="nino-11" data-label="NI number">
-    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="benefit-type-11" data-label="Benefit">UC</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell referral-date-name-col" id="referral-date-11" data-label="Referral date">12 Jan 2024</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="srel-11" data-label="End of life">Yes</td>
-            
-          
-            
-            
-            <td class="govuk-table__cell" id="status-11" data-label="Status">Assigned</td>
-            
-          
-          </tr>
       
     </tbody>
     </table>
-    <div></div>
     
             <div class="moj-pagination" aria-label="Pagination navigation">
     
             <ul class="moj-pagination__list"></ul>
-            <p class="moj-pagination__results">Showing <b>1</b> to <b>45</b> of <b>45</b> referrals</p>
+            <p class="moj-pagination__results">Showing <b>1</b> to <b>8</b> of <b>8</b> referrals</p>
             </div>
     
     </div>
+  </div>
   </main>
 </div>
 {% endblock %}
-
-ß
