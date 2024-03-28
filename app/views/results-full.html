@@ -14,45 +14,24 @@
 {% block content %}
 
 <div>
-  <div class="govuk-width-container">
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-           <h1 class="govuk-heading-l">
+
+          <h1 class="govuk-heading-l">
             
               <span class="govuk-caption-l">Find a claimant</span>
             
-            Results for 'john smith' in Lot 1
+            Results for 'john smith'
           </h1>
           <dl class="govuk-summary-list">
             <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Current Lot selected
-              </dt>
-              <dd class="govuk-summary-list__value">
-                <strong class="govuk-tag" >
-                  Lot 1
-                </strong>
-              </dd>
+              <strong class="govuk-tag" >
+                Lot 1
+              </strong>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="lot-selection-p2.html">Change Lot<span class="govuk-visually-hidden"> name</span></a>
+                <a class="govuk-link" href="Lot-selection.html">Change Lot<span class="govuk-visually-hidden"> name</span></a>
               </dd>
             </div>
-            <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key">
-                Results outside your Lot for 'john smith'
-              </dt>
-              <dd class="govuk-summary-list__value">
-              
-              </dd>
-              <dd class="govuk-summary-list__actions">
-                <a href="results-pagination-s3-2.html" class="govuk-link">View results</a>
-              </dd>
-            </div>
-       </div>
-      </div>
-    </div>
-
-   </div>
+          </dl>
+    
       <table class="govuk-table has-sortable-table" data-count="45">
       
       
@@ -68,6 +47,8 @@
           <th scope="col" class="govuk-table__header" id="referral-date-header">Referral date</th>
         
           <th scope="col" class="govuk-table__header" id="srel-header">End of life</th>
+
+          <th scope="col" class="govuk-table__header" id="srel-header">Lot number</th>
         
           <th scope="col" class="govuk-table__header" id="status-header">Status</th>
         
@@ -105,7 +86,7 @@
               <td class="govuk-table__cell" id="srel-1" data-label="End of life">Yes</td>
 
             
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
               <td class="govuk-table__cell" id="status-1" data-label="Status">Assigned</td>
               
@@ -140,7 +121,7 @@
               
               
               <td class="govuk-table__cell" id="srel-2" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -178,7 +159,7 @@
               
               
               <td class="govuk-table__cell" id="srel-3" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -216,7 +197,7 @@
               
               
               <td class="govuk-table__cell" id="srel-4" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -254,7 +235,7 @@
               
               
               <td class="govuk-table__cell" id="srel-5" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -292,7 +273,7 @@
               
               
               <td class="govuk-table__cell" id="srel-6" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -330,7 +311,7 @@
               
               
               <td class="govuk-table__cell" id="srel-7" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -368,7 +349,7 @@
               
               
               <td class="govuk-table__cell" id="srel-8" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -407,7 +388,7 @@
               
               
               <td class="govuk-table__cell" id="srel-26" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -445,7 +426,7 @@
               
               
               <td class="govuk-table__cell" id="srel-27" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -483,7 +464,7 @@
               
               
               <td class="govuk-table__cell" id="srel-28" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -521,7 +502,7 @@
               
               
               <td class="govuk-table__cell" id="srel-29" data-label="End of life">Yes</td>
-              
+              <td class="govuk-table__cell" id="srel-1" data-label="Lot number">1</td>
               
             
               
@@ -534,26 +515,263 @@
         
       </tbody>
       </table>
-      
-      <nav class="moj-pagination" aria-label="Pagination navigation">
-
-        <ul class="moj-pagination__list">
+      <div class="moj-pagination" aria-label="Pagination navigation">
     
-          <li class="moj-pagination__item moj-pagination__item--active" aria-label="Page 1 of 30" aria-current="page">1</li>
+        <ul class="moj-pagination__list"></ul>
+        <p class="moj-pagination__results">Showing <b>1</b> to <b>12</b> of <b>12</b> referrals</p>
+        <div class="govuk-!-padding-bottom-9"></div>
+
+      </div>
+        <h1 class="govuk-heading-l">          
+          Results for 'john smith' outside your Lot/provider 
+        </h1>
+  
+    <table class="govuk-table has-sortable-table" data-count="273">
+    
+    
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
       
-          <li class="moj-pagination__item"><a class="moj-pagination__link" href="results-p2.html" aria-label="Page 1 of 30">2</a></li>
-            
-          <li class="moj-pagination__item  moj-pagination__item--next">
-            <a class="moj-pagination__link" href="results-p2.html">Next<span class="govuk-visually-hidden"> page</span></a>
-          </li>
-        </ul>
-        <p class="moj-pagination__results">Showing <b>1</b> to <b>12</b> of <b>20</b> referrals</p>
-      </nav>
+        <th scope="col" class="govuk-table__header" id="name-header">Claimant name</th>
+      
+        <th scope="col" class="govuk-table__header" id="nino-header">NI number</th>
+      
+      
+        <th scope="col" class="govuk-table__header" id="srel-header">Lot number</th>
+    
+      
+      </tr>
+    </thead>
+    
+    <tbody class="govuk-table__body">
       
         
-        <div class="govuk-!-padding-bottom-9"></div>
+          <tr class="govuk-table__row">
           
-      </div>
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-1" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/2d9e7ef2-872e-48d3-a71d-045765e9d2db" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-1" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+            
+            
+      
+        
+           
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
+          
+            
+            
+      
+            
+          
+          </tr>
+        
+      
+        
+          <tr class="govuk-table__row">
+          
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-2" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/8e76e39e-3c05-4039-8f2c-5e5e8d76e266" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-2" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+            
+            
+            
+            
+            
+           
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
+            
+          
+            
+            
+            
+          
+          </tr>
+        
+      
+        
+          <tr class="govuk-table__row">
+          
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-3" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/2c926e8d-7a4d-4fcb-9f94-02c002da9398" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-3" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+            
+            
+            
+            
+            
+    
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
+            
+          
+            
+            
+          </tr>
+        
+      
+        
+          <tr class="govuk-table__row">
+          
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-4" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/956f0569-7fdf-4161-a711-f5b3537d1d56" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-4" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+         
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
+            
+          
+          
+          </tr>
+        
+      
+        
+          <tr class="govuk-table__row">
+          
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-5" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/fca5748b-a8f0-4c51-a3e9-e5cc01457754" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-5" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+           
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">2</td>
+            
+          
+           
+          
+          </tr>
+        
+      
+        
+          <tr class="govuk-table__row">
+          
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-6" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/c0bd549d-a2bc-44c5-8a54-04f0f8696ee7" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-6" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+           
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">4</td>
+            
+          
+            
+          
+          
+          </tr>
+        
+      
+        
+          <tr class="govuk-table__row">
+          
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-7" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/cb6f8ce7-d9ec-47c8-b56d-d5af0fa9588c" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-7" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+            
+           
+            
+            
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">4</td>
+            
+          
+            
+            
+            
+          
+          </tr>
+        
+      
+        
+          <tr class="govuk-table__row">
+          
+            
+            
+            <td class="govuk-table__cell" id="claimant-display-name-8" data-label="Claimant name"><a href="/ui-workflow_qa02_workflow/referrals/12d817a6-33bb-469b-930f-c3348ab8635e" class="govuk-link">John Smith</a></td>
+            
+          
+            
+            
+            <td class="govuk-table__cell" id="nino-8" data-label="NI number">
+    <span class="workflow-nino"><span>A<span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>11</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>22</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>33</span><span><span class="govuk-visually-hidden unselectable">&nbsp;</span>A</span></span></td>
+            
+          
+          
+            
+            
+            
+            <td class="govuk-table__cell" id="srel-1" data-label="Lot number">4</td>
+            
+          
+      
+            
+          
+          </tr>
+        
+      
+        
+          
+      
+    </tbody>
+    </table>
+    
+            <div class="moj-pagination" aria-label="Pagination navigation">
+    
+            <ul class="moj-pagination__list"></ul>
+            <p class="moj-pagination__results">Showing <b>1</b> to <b>8</b> of <b>8</b> referrals</p>
+            </div>
+    
     </div>
   </div>
   </main>
