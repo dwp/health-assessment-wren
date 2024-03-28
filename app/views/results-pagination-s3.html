@@ -17,7 +17,8 @@
   <div class="govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-           <h1 class="govuk-heading-l">
+
+          <h1 class="govuk-heading-l">
             
               <span class="govuk-caption-l">Find a claimant</span>
             
@@ -28,31 +29,26 @@
               <dt class="govuk-summary-list__key">
                 Current Lot selected
               </dt>
-              <dd class="govuk-summary-list__value">
-                <strong class="govuk-tag" >
-                  Lot 1
-                </strong>
-              </dd>
+              <strong class="govuk-tag" >
+                Lot 1
+              </strong>
               <dd class="govuk-summary-list__actions">
-                <a class="govuk-link" href="lot-selection-p2.html">Change Lot<span class="govuk-visually-hidden"> name</span></a>
+                <a class="govuk-link" href="#">Change Lot<span class="govuk-visually-hidden"> name</span></a>
               </dd>
             </div>
-            <div class="govuk-summary-list__row">
+            <div class="govuk-summary-list__row govuk-summary-list__row--no-actions">
               <dt class="govuk-summary-list__key">
                 Results outside your Lot for 'john smith'
               </dt>
               <dd class="govuk-summary-list__value">
-              
-              </dd>
-              <dd class="govuk-summary-list__actions">
                 <a href="results-pagination-s3-2.html" class="govuk-link">View results</a>
               </dd>
             </div>
-       </div>
+          </dl>
+          </div>
+        </div>
       </div>
-    </div>
-
-   </div>
+      </div>
       <table class="govuk-table has-sortable-table" data-count="45">
       
       
@@ -535,21 +531,35 @@
       </tbody>
       </table>
       
-      <nav class="moj-pagination" aria-label="Pagination navigation">
-
-        <ul class="moj-pagination__list">
+      <div class="moj-pagination" aria-label="Pagination navigation">
     
-          <li class="moj-pagination__item moj-pagination__item--active" aria-label="Page 1 of 30" aria-current="page">1</li>
-      
-          <li class="moj-pagination__item"><a class="moj-pagination__link" href="results-p2.html" aria-label="Page 1 of 30">2</a></li>
-            
-          <li class="moj-pagination__item  moj-pagination__item--next">
-            <a class="moj-pagination__link" href="results-p2.html">Next<span class="govuk-visually-hidden"> page</span></a>
-          </li>
-        </ul>
-        <p class="moj-pagination__results">Showing <b>1</b> to <b>12</b> of <b>20</b> referrals</p>
-      </nav>
-      
+        <ul class="moj-pagination__list"></ul>
+        <p class="moj-pagination__results">Showing <b>1</b> to <b>10</b> of <b>12</b> referrals</p>
+        
+        <nav class="govuk-pagination" role="navigation" aria-label="Pagination">
+          <ul class="govuk-pagination__list">
+            <li class="govuk-pagination__item govuk-pagination__item--current">
+              <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+                1
+              </a>
+            </li>
+            <li class="govuk-pagination__item">
+              <a class="govuk-link govuk-pagination__link" href="results-pagination-s3-3.html" aria-label="Page 2">
+                2
+              </a>
+            </li>
+          </ul>
+          <div class="govuk-pagination__next">
+            <a class="govuk-link govuk-pagination__link" href="results-pagination-s3-3.html" rel="next">
+              <span class="govuk-pagination__link-title">
+                Next<span class="govuk-visually-hidden"> page</span>
+              </span>
+              <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+                <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
         
         <div class="govuk-!-padding-bottom-9"></div>
           
