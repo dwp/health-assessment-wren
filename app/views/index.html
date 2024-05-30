@@ -5,119 +5,107 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-width-container">
-  <div class="backLink" role="navigation">
+
+<body class="govuk-template__body js-enabled govuk-frontend-supported">
+  <script>document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');</script>
+  
+</header>
+
+
+  
+    <div class="govuk-width-container">
       
-  </div>
-  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content">
-      
-<h1 class="govuk-heading-l">Main menu</h1>  
+      <main class="govuk-main-wrapper" id="main-content">
+        
+
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-<dl class="govuk-summary-list">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      Current Lot selected
-    </dt>
-    <dd class="govuk-summary-list__value">
-      <strong class="govuk-tag" >
-        Lot 1
-      </strong>
-    </dd>
-    <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="#">Change Lot<span class="govuk-visually-hidden"> name</span></a>
-    </dd>
-  </div>
-</dl>
-</div>
-</div>
-<div class="govuk-!-padding-bottom-5"></div>
+<div class="govuk-grid-column-two-thirds">
+  
 
+  <h1 class="govuk-heading-xl">
+    Team Wren: prototypes
+  </h1>
 
-<!-- Replace govuk-summary-card with dwp-card -->
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="filter">
-<a class="govuk-summary-card__link govuk-link" href="caseload-or-status.html">View a caseload or status</a>
-</h2>
-<p class="govuk-summary-card__description">View a referral in progress by caseload or status</p>
-</div>
-</div>
+  <p class="govuk-body">This is the main contents page where different designs prototypes (workflow and gateway) can be accessed via links.</p>
 
+  <p class="govuk-body">These designs are currently owned by team Wren.</p>
 
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="find-a-claimant">
-<a class="govuk-summary-card__link govuk-link" href="find-a-claimant.html">Find a claimant</a>
-</h2>
-<p class="govuk-summary-card__description">Search for a claimant to view their referral</p>
-</div>
+  <p class="govuk-body">If you have any questions about this prototype, or to arrange a demo, contact:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li><a href="mailto:shah.hussain1@engineering.digital.dwp.gov.uk" class="govuk-link">Shah Hussain</a> - Interaction Designer</li>
+  </ul>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class="govuk-heading-l">Multi-lot user journey</h2>
+  
+    <p class="govuk-body">Journey for multi-lot users who are assigned to claimants in more than a signle lot area.
+    </p>
+    
+    <h3 class="govuk-heading-s"><a href="Lot-selection-main.html">View multi-lot user journey</a> </h3>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class="govuk-heading-l">Single-lot user journey</h2>
+  
+    <p class="govuk-body">Journey for single-lot users who are assigned to claimants in a signle lot area.
+    </p>
+    
+    <h3 class="govuk-heading-s"><a href="main-menu-single-lot.html">View single-lot user journey</a> </h3>
+
 </div>
 
 
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="unassigned-referrals">
-<a class="govuk-summary-card__link govuk-link" href="new-referrals-to-assign.html">New referrals to assign (26)</a>
-</h2>
-<p class="govuk-summary-card__description">Assign new referrals to a caseload</p>
-</div>
-</div>
+      </main>
+    </div>
+  
 
 
 
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="create-referral">
-<a class="govuk-summary-card__link govuk-link" href="">Create a referral</a>
-</h2>
-<p class="govuk-summary-card__description">Add a paper referral to the active referrals list</p>
-</div>
-</div>
+
+  
+
+  
+
+  <script src="/plugin-assets/govuk-prototype-kit/lib/assets/javascripts/kit.js"></script>
 
 
 
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="manage-booking">
-<a class="govuk-summary-card__link govuk-link" href="">Manage booked assessments</a>
-</h2>
-<p class="govuk-summary-card__description">View or cancel a booked assessment or assign a HCP</p>
-</div>
-</div>
+  <script src="/plugin-assets/govuk-prototype-kit/lib/assets/javascripts/auto-store-data.js"></script>
 
 
 
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="manage-hcp-profiles">
-<a class="govuk-summary-card__link govuk-link" href="">Manage HCP profiles</a>
-</h2>
-<p class="govuk-summary-card__description">Add, edit or remove a HCP and their skills</p>
-</div>
-</div>
+  <script type="module" src="/plugin-assets/govuk-frontend/dist/govuk/govuk-frontend.min.js"></script>
 
 
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="incomplete-referral">
-<a class="govuk-summary-card__link govuk-link" href="multi-Lot-user-incomplete-referral.html">View incomplete referrals</a>
-</h2>
-<p class="govuk-summary-card__description">View a list of incomplete referrals</p>
-</div>
-</div>
+
+  <script type="module" src="/plugin-assets/govuk-frontend/dist/govuk-prototype-kit/init.js"></script>
 
 
-<div class="govuk-summary-card govuk-summary-card--clickable">
-<div class="govuk-summary-card__content">
-<h2 class="govuk-summary-card__heading govuk-summary-carding-m" id="change-to-pip-referral">
-<a class="govuk-summary-card__link govuk-link" href="multi-Lot-user-unactioned-pip-alerts.html">Changes to PIP referrals</a>
-</h2>
-<p class="govuk-summary-card__description">Confirm new referrals and view alerts for supporting evidence, documents and changes of circumstances added to existing referrals</p>
-</div>
-</div>
+
+  <script src="/plugin-assets/%40dwp%2Fdwp-frontend/components/dwp.min.js"></script>
 
 
+
+  <script src="/plugin-assets/%40ministryofjustice%2Ffrontend/moj/all.jquery.min.js"></script>
+
+
+
+  <script src="/plugin-assets/%40ministryofjustice%2Ffrontend/moj/init.js"></script>
+
+
+
+  <script type="module" src="/public/javascripts/application.js"></script>
+
+
+
+
+  
+
+
+
+
+</body>
   </main>
 </div>
 
