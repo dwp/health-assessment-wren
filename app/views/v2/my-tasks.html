@@ -1,0 +1,81 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+{% block content %}
+
+<div class="govuk-width-container ">
+    
+
+      <main class="govuk-main-wrapper " id="main-content" role="main">
+        
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-full">
+  <h1 class="govuk-heading-l">My open tasks</h1>
+
+  
+  </div>
+</div>
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header">Claimant name</th>
+      <th scope="col" class="govuk-table__header">Referral date</th>
+      <th scope="col" class="govuk-table__header">Task</th>
+      <th scope="col" class="govuk-table__header">Status</th>
+      <th scope="col" class="govuk-table__header">Actions</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="task-list.html">Sam Doe</a>
+      </td><td class="govuk-table__cell">22 August 2023</td>
+      <td class="govuk-table__cell">Review medical evidence</td>
+      <td class="govuk-table__cell">PIP</td>
+      <td class="govuk-table__cell">
+        <div class="govuk-button-group">
+          <a href="review-task.html" class="govuk-button" data-module="govuk-button">
+            Review task
+          </a>
+          <a class="govuk-link" href="">I cannot do this task</a>
+   </tbody>
+   <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="./Referral details.html">Jane Smith</a>
+      </td><td class="govuk-table__cell">22 August 2023</td>
+      <td class="govuk-table__cell">Review new referral</td>
+      <td class="govuk-table__cell">UC</td>
+      <td class="govuk-table__cell">
+        <div class="govuk-button-group">
+          <a href="" class="govuk-button" data-module="govuk-button">
+            Review task
+          </a>
+          <a class="govuk-link" href="">I cannot do this task</a>
+   </tbody>
+   <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell"><a href="./Referral details.html">John Doherty</a>
+      </td><td class="govuk-table__cell">22 August 2023</td>
+      <td class="govuk-table__cell">Review new referral</td>
+      <td class="govuk-table__cell">PIP</td>
+      <td class="govuk-table__cell">
+        <div class="govuk-button-group">
+          <a href="" class="govuk-button" data-module="govuk-button">
+            Review task
+          </a>
+          <a class="govuk-link" href="">I cannot do this task</a>
+   </tbody>
+</table>
+</div>
+
+{% endblock %}

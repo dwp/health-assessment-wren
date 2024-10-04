@@ -1,0 +1,78 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+  
+      <form action="https://dwp-health-pip-agent-c0845210c372.herokuapp.com/agent-0-9/XXX" method="post" class="form">
+  
+  
+        <p class="govuk-heading-l govuk-!-margin-bottom-8">Dashboard</p>
+  
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+  
+                        <div class="govuk-grid-row">
+              <div class="govuk-grid-column-full">
+  
+  
+        
+  
+                <div class="govuk-grid-row">
+                  <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+                    <h2 class="govuk-heading-m">Tasks to do</h2>
+            <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header">Claimant name</th>
+              <th scope="col" class="govuk-table__header">Task</th>
+              <th scope="col" class="govuk-table__header">Benefit</th>
+              </tr>
+          
+              
+            </tbody>
+            </table>
+            
+            
+                <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="my-tasks-2.html">Get a task</a>
+  
+                  </p></div>
+  
+  
+  <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+                    <h2 class="govuk-heading-m">My appointments for today</h2>
+  
+      <table data-module="moj-sortable-table" class="govuk-table">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Claimant</th>
+            <th scope="col" class="govuk-table__header">Benefit</th>
+            <th scope="col" class="govuk-table__header" aria-sort="none">Time</th>
+            <th scope="col" class="govuk-table__header" aria-sort="none">Type</th>
+           
+          </tr>
+      
+  
+          </tr>
+              </tbody>
+      </table>
+    
+    <p class="govuk-!"><a class="govuk-body govuk-!-font-size-19" href="booked-appointments-1.html">View all my appointments</a>
+  
+      
+</div>
+
+<div class="govuk-width-container">  
+  <a href="main-menu-mar2026.html" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+    Go to main menu
+  </a>
+</div>   
+{% endblock %}
