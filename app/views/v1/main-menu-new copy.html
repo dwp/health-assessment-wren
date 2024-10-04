@@ -1,0 +1,72 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+      
+<h1 class="govuk-heading-l">Main menu</h1>  
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+{% if data["request-access"] == "6" %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third govuk-!-margin-bottom-6">
+        <p class="govuk-body govuk-!-font-weight-bold">                      {{govukTag({
+                                  text: "New",
+                                  classes: "govuk-tag--green"
+                                })}} &hairsp;Managing workload</p>
+
+        <p class="govuk-!-margin-bottom-1"><a class="govuk-body govuk-!-font-size-19" href="team-lead-team-overview">My team</a></p>
+        <p class="govuk-!-margin-bottom-1"><a class="govuk-body govuk-!-font-size-19" href="#">Approvals</a></p>
+
+
+      </div>
+
+{% else %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third govuk-!-margin-bottom-6">
+        <h2 class="govuk-heading-m">Task manager</h2>    
+      <!-- <p class="govuk-!-margin-bottom-3"><a class="govuk-body govuk-!-font-size-19" href="cya-1">Process an application (NC)</a></p> -->
+      <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="main-menu-mar2026-new.html">View task manager</a></p>
+      <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="my-tasks.html">View open tasks</a></p>
+      <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="my-tasks-2.html">Get a new task</a></p>
+      <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="booked-appointments-1.html">View my appointments</a></p>
+      </div>
+      
+
+
+      <div class="govuk-grid-column-one-third govuk-!-margin-bottom-6">
+        <h2 class="govuk-heading-m">Referrals</h2> 
+
+  
+
+
+        <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="service-stats">Create a referral</a></p>
+        <p class="govuk-!-margin-bottom-6"><a class="govuk-body govuk-!-font-size-19" href="request-access">View incomplete referrals</a></p>
+
+        {% if data["request-access"] == "1" %}
+        <p class="govuk-!-margin-bottom-1">
+          {{govukTag({
+              text: "New",
+              classes: "govuk-tag--green"
+            })}} &hairsp;
+             <a class="govuk-body govuk-!-font-size-19" href="#">Disputes</a></p>
+          {% else %}
+        {% endif %}
+      </div>
+
+      {% endif %}
+
+      <div class="govuk-grid-column-one-third govuk-!-margin-bottom-6">
+        <h2 class="govuk-heading-m">Other services</h2> 
+        <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="outbound-precall">Manage HCP profiles</a></p>
+        <p class="govuk-!-margin-bottom-2"><a class="govuk-body govuk-!-font-size-19" href="find-someone-1-offline-gather">Find a claimant</a></p>
+
+      </div>
+    </div>
+
+{% endblock %}

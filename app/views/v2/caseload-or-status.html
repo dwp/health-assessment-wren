@@ -1,0 +1,579 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Question page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+              
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    
+    <form id="select-Lot" class="form" action="dst-caseloads.html">
+
+<div class="govuk-form-group">
+
+<fieldset class="govuk-fieldset" aria-describedby="filters-hint">
+
+<legend class="govuk-fieldset__legend govuk-fieldset__legend govuk-fieldset__legend--l">
+
+  <h1 class="govuk-fieldset__heading">
+    View a caseload or status in Lot 1
+  </h1>
+
+</legend>
+
+
+<div id="filters-hint" class="govuk-hint">
+  View referrals in a caseload or by status
+</div>
+
+
+<div class="govuk-radios" data-module="govuk-radios">
+  
+    
+        
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="filters" name="filters" type="radio" value="caseload" role="radiogroup" aria-controls="conditional-filters" aria-expanded="true">
+        <label class="govuk-label govuk-radios__label" for="filters">
+      Caseload
+    </label>
+        
+      </div>
+      
+        <div class="govuk-radios__conditional" id="conditional-filters">
+          
+
+<div class="govuk-form-group">
+
+<div class="govuk-radios govuk-radios--small caseload_group" role="radiogroup" data-module="govuk-radios">
+  
+    
+        
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload" name="caseload" type="radio" value="4b6c11cb-d4c7-4c63-b5af-0401ea77490d">
+        <label class="govuk-label govuk-radios__label" for="caseload">
+      Anyone (12)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-2" name="caseload" type="radio" value="c896c4d7-3126-4df8-9fdf-cc2e49068f64">
+        <label class="govuk-label govuk-radios__label" for="caseload-2">
+      Artificial (2)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-3" name="caseload" type="radio" value="bb06d1e9-235a-4f9b-81f3-eab77de26dec">
+        <label class="govuk-label govuk-radios__label" for="caseload-3">
+      DST Caseloads (2)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-4" name="caseload" type="radio" value="ad2eeffe-e0a2-444a-8c5f-d364c57a74a5">
+        <label class="govuk-label govuk-radios__label" for="caseload-4">
+      Data Segregation Test Two (3)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-5" name="caseload" type="radio" value="e02724e2-97e1-4828-a9cc-3324739a157f">
+        <label class="govuk-label govuk-radios__label" for="caseload-5">
+      E2E Caseload (716)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-6" name="caseload" type="radio" value="c896c4d7-3126-4df8-9fdf-cc2e49068f63">
+        <label class="govuk-label govuk-radios__label" for="caseload-6">
+      Felix (6)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-7" name="caseload" type="radio" value="515d3bc1-f157-41ae-8de2-578a73cadd49">
+        <label class="govuk-label govuk-radios__label" for="caseload-7">
+      Felix (2)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-8" name="caseload" type="radio" value="0e30a416-90b0-47da-9aca-18f46b600c6d">
+        <label class="govuk-label govuk-radios__label" for="caseload-8">
+      Felix Test (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-9" name="caseload" type="radio" value="e225de0f-1bcf-4676-bd89-8e16581843c6">
+        <label class="govuk-label govuk-radios__label" for="caseload-9">
+      Matt (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-10" name="caseload" type="radio" value="0ef7340c-0a5c-445e-b453-051f26f3e4b3">
+        <label class="govuk-label govuk-radios__label" for="caseload-10">
+      Trash (228)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-11" name="caseload" type="radio" value="0aafacc0-b285-4583-a1f3-10c358287e33">
+        <label class="govuk-label govuk-radios__label" for="caseload-11">
+      legacy assessment (1)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="caseload-12" name="caseload" type="radio" value="5da7d46c-d772-41c4-90b2-f889935a4f15">
+        <label class="govuk-label govuk-radios__label" for="caseload-12">
+      raju (1)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+</div>
+
+</div>
+
+        </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="filters-2" name="filters" type="radio" value="status" role="radiogroup" aria-controls="conditional-filters-2" aria-expanded="false">
+        <label class="govuk-label govuk-radios__label" for="filters-2">
+      Status
+    </label>
+        
+      </div>
+      
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-filters-2">
+          
+
+<div class="govuk-form-group">
+
+<div class="govuk-radios govuk-radios--small status_group" role="radiogroup" data-module="govuk-radios">
+  
+    
+        
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status" name="status" type="radio" value="11" data-ga-value="assigned">
+        <label class="govuk-label govuk-radios__label" for="status">
+      Assigned (718)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="12" data-ga-value="awaiting_questionnaire">
+        <label class="govuk-label govuk-radios__label" for="status-2">
+      Awaiting questionnaire (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="13" data-ga-value="questionnaire_reminder_sent">
+        <label class="govuk-label govuk-radios__label" for="status-3">
+      Questionnaire reminder sent (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="14" data-ga-value="questionnaire_not_returned">
+        <label class="govuk-label govuk-radios__label" for="status-4">
+      Questionnaire not returned (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-5" name="status" type="radio" value="15" data-ga-value="hcp_review">
+        <label class="govuk-label govuk-radios__label" for="status-5">
+      HCP review (2)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-6" name="status" type="radio" value="16" data-ga-value="request_medical_evidence">
+        <label class="govuk-label govuk-radios__label" for="status-6">
+      Request medical evidence (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-7" name="status" type="radio" value="17" data-ga-value="awaiting_medical_evidence">
+        <label class="govuk-label govuk-radios__label" for="status-7">
+      Awaiting medical evidence (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-8" name="status" type="radio" value="18" data-ga-value="medical_evidence_not_received">
+        <label class="govuk-label govuk-radios__label" for="status-8">
+      Medical evidence not received (1)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-9" name="status" type="radio" value="19" data-ga-value="medical_evidence_received">
+        <label class="govuk-label govuk-radios__label" for="status-9">
+      Medical evidence received (3)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-10" name="status" type="radio" value="20" data-ga-value="book_assessment">
+        <label class="govuk-label govuk-radios__label" for="status-10">
+      Book assessment (6)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-11" name="status" type="radio" value="6" data-ga-value="assessment_booked">
+        <label class="govuk-label govuk-radios__label" for="status-11">
+      Assessment booked (20)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-12" name="status" type="radio" value="27" data-ga-value="pip_paper_based_review">
+        <label class="govuk-label govuk-radios__label" for="status-12">
+      PIP paper based review (80)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-13" name="status" type="radio" value="5" data-ga-value="wca_paper_based_review">
+        <label class="govuk-label govuk-radios__label" for="status-13">
+      WCA paper based review (1)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-14" name="status" type="radio" value="23" data-ga-value="failed_to_attend">
+        <label class="govuk-label govuk-radios__label" for="status-14">
+      Failed to attend (1)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-15" name="status" type="radio" value="24" data-ga-value="report_ready">
+        <label class="govuk-label govuk-radios__label" for="status-15">
+      Report ready (141)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-16" name="status" type="radio" value="25" data-ga-value="hcp_audit">
+        <label class="govuk-label govuk-radios__label" for="status-16">
+      HCP audit (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-17" name="status" type="radio" value="26" data-ga-value="pipcs_descriptors_updated">
+        <label class="govuk-label govuk-radios__label" for="status-17">
+      PIPCS descriptors updated (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+    
+      
+      
+      
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="status-18" name="status" type="radio" value="28" data-ga-value="assessment_not_completed">
+        <label class="govuk-label govuk-radios__label" for="status-18">
+      Assessment not completed (0)
+    </label>
+        
+      </div>
+      
+      
+    
+  
+</div>
+
+</div>
+
+        </div>
+      
+      
+    
+  
+</div>
+
+
+</fieldset>
+
+
+</div>
+
+
+      
+
+      
+
+
+  
+
+
+<button type="submit" class="govuk-button" data-module="govuk-button" id="filter">
+Continue
+</button>
+
+    </form>
+  </div>
+</div>
+
+</main>
+</div>
+
+{% endblock %}

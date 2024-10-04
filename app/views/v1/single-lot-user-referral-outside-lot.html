@@ -1,0 +1,36 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <div>
+        <div class="govuk-width-container">
+          <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-l">Sorry, there is a problem</h1>
+                <p class="govuk-body">
+                  You do not have access to this user lot.
+                
+                </p>
+               <p>If you think you should have access, contact your team leader / manager.</p> 
+                <p class="govuk-body">
+                  <a class="govuk-link" href="main-menu-multi-lot.html">Return to HAS main menu</a> 
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
+
+    </div>
+  </div>
+
+{% endblock %}
