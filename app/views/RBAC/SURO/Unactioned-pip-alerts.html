@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+
+        <h1 class="govuk-heading-xl">PIP alerts</h1>
+        <table class="govuk-table">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Date created</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Nino / crn</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Alert type</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">LOT number</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+
+
+            </tr>
+
+
+
+            </tr>
+
+
+
+            </tr>
+
+
+
+            </tr>
+          </tbody>
+        </table>
+        <div class="moj-pagination" aria-label="Pagination navigation">
+    
+          <ul class="moj-pagination__list"></ul>
+          <p class="moj-pagination__results">Showing <b>0</b> unactioned PIP alerts</p>
+          </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

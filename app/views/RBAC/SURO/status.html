@@ -1,0 +1,194 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+  {% include "includes/blue-banner-book-assessment.html" %}
+  <!-- {% include "includes/quick-reference.html" %} -->
+  <div class="govuk-width-container">
+    {{ govukBackLink({
+      text: "Back",
+      href: "javascript:history.back()"
+    }) }}
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-width-container">
+  
+
+  <div class="govuk-width-container {{ containerClasses }}">
+   
+
+      <div class="govuk-grid-row">
+
+          
+
+        <div class="govuk-grid-column-two-thirds">
+
+
+        <!-- hidden for booking details removed for mvp  <form action="event-contact" method="post" class="form"> -->
+            <form action="status-question.html" method="post" class="form">
+
+          <h1 class="govuk-heading-l">
+            Select a status
+
+          </h1>
+  
+        
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+               
+                <div class="govuk-radios govuk-radios">
+                 
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                    <label class="govuk-label govuk-radios__label" for="contact-2">
+                      Assigned
+                </label>                      
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+                  Awaiting questionnaire
+            </label>                      
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+            <label class="govuk-label govuk-radios__label" for="contact-2">
+              Questionnaire reminder sent
+        </label>                      
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+        <label class="govuk-label govuk-radios__label" for="contact-2">
+          Questionnaire not returned
+    </label>                      
+  </div>
+  <div class="govuk-radios__item">
+    <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+    <label class="govuk-label govuk-radios__label" for="contact-2">
+      HCP review
+</label>                      
+</div>
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+  <label class="govuk-label govuk-radios__label" for="contact-2">
+    Request medical evidence
+</label>                      
+</div>
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+  <label class="govuk-label govuk-radios__label" for="contact-2">
+    Awaiting medical evidence
+</label>                      
+</div>
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+  <label class="govuk-label govuk-radios__label" for="contact-2">
+    Medical evidence not received
+</label>                      
+</div>
+<div class="govuk-radios__item">
+  <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+  <label class="govuk-label govuk-radios__label" for="contact-2">
+    Medical evidence received
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    Book assessment
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    Assessment booked
+</label>                      
+</div>
+<div class="govuk-radios__item" data-module="govuk-radios">
+  <input class="govuk-radios__input" id="action-1" name="action" type="radio" aria-controls="conditional-action-1" aria-expanded="false" value="Initial or further evidence reviewed" {{ checked("action", "Initial or further evidence reviewed") }}>
+  <label class="govuk-label govuk-radios__label" for="action-1">
+    PIP paper based review
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    Failed to attend
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    Report ready
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    HCP audit
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    Done
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    Withdrawn
+</label>                      
+</div>
+             <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                <label class="govuk-label govuk-radios__label" for="contact-2">
+    Created in error
+</label>                      
+</div>
+             
+              
+
+               
+            
+      </div>
+
+       <br>
+             
+
+
+         <!-- <div class="hidden-radio-post">
+                <div class="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="contact-claim-change" name="contact-method" type="radio" value="The claim has changed" {{ checked("contact-method", "The claim has changed") }}checked>
+                    <label class="govuk-label govuk-radios__label" for="log-show">
+                   Hidden radio = The claim has changed
+                    </label>
+                  </div>
+                </div>
+              </div>-->  
+          
+
+              {{ govukButton({
+                text: "Continue"
+              }) }}
+
+            </form>
+ 
+            </div>
+        </div>
+
+    </main>
+  </div>
+  </div>
+{% endblock %}
