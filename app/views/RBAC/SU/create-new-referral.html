@@ -1,0 +1,55 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+{% block content %}
+
+  <div class="govuk-width-container">
+      <form action="referral-confirmation" method="post" class="form">
+           <h1 class="govuk-heading-l">  Enter referral details          </h1>
+          
+
+  
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+      </legend>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-1">
+          First name
+        </label>
+        <input class="govuk-input" id="address-line-1" name="addressLine1" type="text" autocomplete="address-line1">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-line-2">
+          Last name       </label>
+        <input class="govuk-input" id="address-line-2" name="addressLine2" type="text" autocomplete="address-line2">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-town">Requested name        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="addressTown" type="text" autocomplete="address-level2">
+      </div>
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-postcode">
+          Postcode
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="addressPostcode" type="text" autocomplete="postal-code">
+      </div>
+    </fieldset>
+
+
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+      </form>
+
+    </div>
+{% endblock %}

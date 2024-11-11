@@ -1,0 +1,104 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+        <h1 class="govuk-heading-xl">Incomplete referrals</h1>
+        <form action="create-new-referral" method="post" class="form">
+        <button type="submit" class="govuk-button" data-module="govuk-button" id="assign">
+          Create a new referral
+          </button>
+          
+        <table class="govuk-table" id="mytable">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Surname</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">First name</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Preferred name</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Nino / crn</th>
+               <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">LOT number</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Date submitted</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Action</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row" data-category="lot1">
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">Ben</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">T734HF54</td>
+              <td class="govuk-table__cell">LOT 1</td>
+              <td class="govuk-table__cell">25 January 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+            <tr class="govuk-table__row" data-category="lot1">
+              <td class="govuk-table__cell">Michael</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">SG54G5GG </td>
+               <td class="govuk-table__cell">LOT 1</td>
+              <td class="govuk-table__cell">27 January 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+            <tr class="govuk-table__row" data-category="lot4">
+              <td class="govuk-table__cell">Collins</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell"> HYTH4564</td>
+               <td class="govuk-table__cell">LOT 4</td>
+              <td class="govuk-table__cell">28 December 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+            <tr class="govuk-table__row" data-category="lot4">
+              <td class="govuk-table__cell">  </td>
+              <td class="govuk-table__cell">Jack</td>
+              <td class="govuk-table__cell"> </td>
+              <td class="govuk-table__cell">CDE4435C</td>
+               <td class="govuk-table__cell">LOT 4</td>
+              <td class="govuk-table__cell">20 January 2024</td>
+              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="moj-pagination" aria-label="Pagination navigation">
+    
+          <ul class="moj-pagination__list"></ul>
+          <p class="moj-pagination__results">Showing <b>1</b> to <b>4</b> of <b>4</b> referrals</p>
+          </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+  document
+    .getElementById("applyFiltersButton")
+    .addEventListener("click", function () {
+      var checkedCheckboxes = document.querySelectorAll(
+        'input[name="organisation"]:checked'
+      );
+      var rows = document.querySelectorAll("#mytable tbody tr");
+      rows.forEach(function (row) {
+        row.style.display = "none";
+        checkedCheckboxes.forEach(function (checkbox) {
+          if (row.getAttribute("data-category") === checkbox.value) {
+            row.style.display = "";
+          }
+        });
+      });
+    });
+</script>
+{% endblock %}
