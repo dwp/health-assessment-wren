@@ -1,0 +1,101 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+  {% include "includes/blue-banner-book-assessment.html" %}
+  <!-- {% include "includes/quick-reference.html" %} -->
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+
+    <a href="claimant-detail.html" class="govuk-back-link">Back</a>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds" style="margin-top: 40px;">
+        
+  
+        <form class="form" action="claimant-detail" autocomplete="off" method="post" novalidate="">
+          <input type="hidden" name="_csrf" value="">
+  
+          
+  
+  
+  
+  <div class="govuk-form-group">
+  
+    <fieldset class="govuk-fieldset">
+      
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      
+        <h1 class="govuk-fieldset__heading">
+          Is this a special rules end of life (SREL) case?
+        </h1>
+      
+      </legend>
+      
+    
+      <div class="govuk-radios" data-module="govuk-radios" data-govuk-radios-init="">
+        
+        
+          
+      
+        
+        
+        
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="srel" name="srel" type="radio" value="YES" checked="">
+          <label class="govuk-label govuk-radios__label" for="srel">
+            Yes
+          </label>
+          
+        </div>
+        
+      
+        
+          
+      
+        
+        
+        
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="srel-2" name="srel" type="radio" value="NO">
+          <label class="govuk-label govuk-radios__label" for="srel-2">
+            No
+          </label>
+          
+        </div>
+        
+      
+        
+        
+      </div>
+    
+    </fieldset>
+  
+  </div>
+  
+  
+          
+    
+      
+    
+  
+  <button type="submit" class="govuk-button" data-module="govuk-button" id="submit" data-govuk-button-init="">
+    Save
+  </button>
+  
+        </form>
+      </div>
+    </div>
+
+   {% endblock %}

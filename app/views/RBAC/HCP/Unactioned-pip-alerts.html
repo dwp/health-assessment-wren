@@ -15,41 +15,61 @@
 
 {% block content %}
 
-<div class="govuk-width-container">
-  <main class="govuk-main-wrapper">
+  <h1 class="govuk-heading-l">Unactioned PIP Alerts</h1>
 
-        <h1 class="govuk-heading-xl">PIP alerts</h1>
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Date created</th>
-              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Assessment case reference no</th>
-              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Type</th>
-    
-            </tr>
-          </thead>
-          <tbody class="govuk-table__body">
-
-
-            </tr>
+  
 
 
 
-            </tr>
 
 
 
-            </tr>
+
+<div class="govuk-form-group govuk-!-margin-bottom-0">
+<label class="govuk-label" for="searchNino">
+Enter an NI number
+</label>
+
+
+<div class="govuk-input__wrapper govuk-!-margin-bottom-0">
+
+
+<input class="govuk-input govuk-input--width-20 govuk-!-margin-right-1" id="searchNino" name="search" type="text" autocomplete="off">
+
+    <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" id="nino-search-button" data-govuk-button-init="">
+  Search
+</button>
+
+</div>
+
+</div>
 
 
 
-            </tr>
-          </tbody>
-        </table>
+
+
+
+  
+    <table class="govuk-table">
+      <caption class="govuk-visually-hidden">Unactioned PIP Alerts</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header app-custom-class">Date created</th>
+          <th scope="col" class="govuk-table__header app-custom-class">NI number</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Alert type</th>
+          <th scope="col" class="govuk-table__header app-custom-class">End of life</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Action</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        
+      </tbody>
+    </table>
+  
+
+</div>
         <div class="moj-pagination" aria-label="Pagination navigation">
     
-          <ul class="moj-pagination__list"></ul>
-          <p class="moj-pagination__results">Showing <b>0</b> Alerts</p>
           </div>
       </div>
     </div>
