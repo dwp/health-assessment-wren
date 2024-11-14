@@ -1,0 +1,107 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+
+    <a href="claimant-detail-personal.html" class="govuk-back-link">Back</a>
+    <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content">
+                
+      <div class="govuk-grid-row">
+          <div class="govuk-grid-column-full">
+              
+  
+              <form class="form" action="claimant-detail-personal" autocomplete="off" method="post" novalidate="">
+                  <input type="hidden" name="_csrf" value="">
+                  <input type="hidden" name="citizenId" value="3cf89add-7803-45e5-9f2a-eb5991d51ba7">
+                  <input type="hidden" name="referralId" value="91c766bd-c468-442c-944d-9f6e7de60796">
+  
+              
+  
+  
+  
+  <div class="govuk-form-group">
+  
+    <fieldset class="govuk-fieldset" aria-describedby="removeAlternative-hint">
+      
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      
+        <h1 class="govuk-fieldset__heading">
+          Are you sure you want to remove the alternative phone number?
+        </h1>
+      
+      </legend>
+      
+    
+      <div id="removeAlternative-hint" class="govuk-hint">
+        <div class="govuk-inset-text">
+          0162329876
+        </div>
+      </div>
+    
+    
+      <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios" data-govuk-radios-init="">
+        
+        
+          
+      
+        
+        
+        
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="removeAlternative" name="removeAlternative" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="removeAlternative">
+            Yes
+          </label>
+          
+        </div>
+        
+      
+        
+          
+      
+        
+        
+        
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="removeAlternative-2" name="removeAlternative" type="radio" value="no">
+          <label class="govuk-label govuk-radios__label" for="removeAlternative-2">
+            No
+          </label>
+          
+        </div>
+        
+      
+        
+        
+      </div>
+    
+    </fieldset>
+  
+  </div>
+  
+  
+                  
+    
+      
+    
+  
+  <button type="submit" class="govuk-button" data-module="govuk-button" id="continue" data-govuk-button-init="">
+    Save
+  </button>
+  
+              </form>
+          </div>
+      </div>
+  
+              </main>
+
+   </div>
+</div>
+   {% endblock %}

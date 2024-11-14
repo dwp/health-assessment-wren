@@ -13,7 +13,7 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
     <a href="claimant-detail.html" class="govuk-back-link">Back</a>
 
     <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds" style="margin-top: 40px;">
+      <div class="govuk-grid-column-full" style="margin-top: 40px;">
         
   
         <form class="form" action="claimant-detail" autocomplete="off" method="post" novalidate="">
@@ -30,9 +30,10 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       
         <h1 class="govuk-fieldset__heading">
-          Is this a special rules end of life (SREL) case?
-        </h1>
-      
+
+          Does the claimant give consent to get further medical evidence?       
+         </h1>
+    
       </legend>
       
     
@@ -64,7 +65,13 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
           <label class="govuk-label govuk-radios__label" for="srel-2">
             No
           </label>
-          
+        </div>
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="srel-2" name="srel" type="radio" value="NOT KNOWN">
+            <label class="govuk-label govuk-radios__label" for="srel-2">
+              Not known
+            </label>
         </div>
         
       
