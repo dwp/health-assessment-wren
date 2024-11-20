@@ -6,12 +6,12 @@
 {% block beforeContent %}
 {{ govukBackLink({
   text: "Back",
-  href: "javascript:window.history.back()"
+  href: "main-menu.html"
 }) }}
 {% endblock %}
 {% block content %}
 
-  <form class="form" action="/ui-workflow_qa02_workflow/referrals/assign/bulk?page=1&amp;size=100" autocomplete="off" method="post" novalidate="">
+  <form class="form" action="new-referrals-question" autocomplete="off" method="post" novalidate="">
       <input type="hidden" name="_csrf" value="">
       
               <div class="govuk-form-group">
@@ -25,7 +25,7 @@
               </span>
               
 
-  <script src="/ui-workflow_qa02_workflow/assets/select-all.js"></script>
+  <script src=""></script>
   <noscript>
     <style>
       #select-all {

@@ -8,7 +8,7 @@
 {% block beforeContent %}
 {{ govukBackLink({
   text: "Back",
-  href: "javascript:window.history.back()"
+  href: "main-menu.html"
 }) }}
 {% endblock %}
 
@@ -16,14 +16,6 @@
 {% block content %}
 
   <h1 class="govuk-heading-l">Unactioned PIP Alerts</h1>
-
-  
-
-
-
-
-
-
 
 <div class="govuk-form-group govuk-!-margin-bottom-0">
 <label class="govuk-label" for="searchNino">
@@ -43,12 +35,6 @@ Enter an NI number
 </div>
 
 </div>
-
-
-
-
-
-
   
     <table class="govuk-table">
       <caption class="govuk-visually-hidden">Unactioned PIP Alerts</caption>
@@ -62,7 +48,34 @@ Enter an NI number
         </tr>
       </thead>
       <tbody class="govuk-table__body">
-        
+        <tr class="govuk-table__row" data-category="lot1">
+          <td class="govuk-table__cell">25 January 2024</td>
+          <td class="govuk-table__cell">AS434959F</td>
+          <td class="govuk-table__cell">Task</td>
+          <td class="govuk-table__cell">No</td>
+          <td class="govuk-table__cell"> <p><a href="view-alert" class="govuk-link">View alert</a></p> </td>
+        </tr>
+        <tr class="govuk-table__row" data-category="lot1">
+          <td class="govuk-table__cell">27 January 2024</td>
+          <td class="govuk-table__cell">FV434459J</td>
+          <td class="govuk-table__cell">Task</td>
+          <td class="govuk-table__cell">No</td>
+          <td class="govuk-table__cell"> <p><a href="#" class="govuk-link">View alert</a></p> </td>
+        </tr>
+        <tr class="govuk-table__row" data-category="lot4">
+          <td class="govuk-table__cell">28 December 2024</td>
+          <td class="govuk-table__cell">BN426459A</td>
+          <td class="govuk-table__cell">Task</td>
+          <td class="govuk-table__cell">Yes</td>
+          <td class="govuk-table__cell"> <p><a href="#" class="govuk-link">View alert</a></p> </td>
+        </tr>
+        <tr class="govuk-table__row" data-category="lot4">
+          <td class="govuk-table__cell">20 January 2024</td> 
+          <td class="govuk-table__cell">CD426334D</td>
+          <td class="govuk-table__cell">Task</td>
+          <td class="govuk-table__cell">Yes</td>
+          <td class="govuk-table__cell"> <p><a href="#" class="govuk-link">View alert</a></p> </td>
+        </tr>
       </tbody>
     </table>
   

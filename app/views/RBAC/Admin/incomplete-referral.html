@@ -8,7 +8,7 @@
 {% block beforeContent %}
 {{ govukBackLink({
   text: "Back",
-  href: "javascript:window.history.back()"
+  href: "main-menu.html"
 }) }}
 {% endblock %}
 
@@ -17,60 +17,45 @@
 
 <div class="govuk-width-container">
 
-        <h1 class="govuk-heading-xl">Incomplete referrals</h1>
-        <form action="create-new-referral" method="post" class="form">
+        <h1 class="govuk-heading-l">Incomplete referrals</h1>
+        <!-- <form action="create-new-referral" method="post" class="form">
         <button type="submit" class="govuk-button" data-module="govuk-button" id="assign">
           Create a new referral
-          </button>
+          </button> -->
           
         <table class="govuk-table" id="mytable">
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
-              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Surname</th>
-              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">First name</th>
-              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Preferred name</th>
-              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Nino / crn</th>
-               <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">LOT number</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Claimant name</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">NI number</th>
               <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Date submitted</th>
               <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Action</th>
             </tr>
           </thead>
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row" data-category="lot1">
-              <td class="govuk-table__cell"> </td>
-              <td class="govuk-table__cell">Ben</td>
-              <td class="govuk-table__cell"> </td>
-              <td class="govuk-table__cell">T734HF54</td>
-              <td class="govuk-table__cell">LOT 1</td>
+              <td class="govuk-table__cell">Eli Erwin</td>
+              <td class="govuk-table__cell">AS434959F</td>
               <td class="govuk-table__cell">25 January 2024</td>
-              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+              <td class="govuk-table__cell"> <p><a href="update-details" class="govuk-link">Update details</a></p> <p><a href="incomplete-referral-question.html" class="govuk-link">Remove referral</a></p></td>
             </tr>
             <tr class="govuk-table__row" data-category="lot1">
-              <td class="govuk-table__cell">Michael</td>
-              <td class="govuk-table__cell"> </td>
-              <td class="govuk-table__cell"> </td>
-              <td class="govuk-table__cell">SG54G5GG </td>
-               <td class="govuk-table__cell">LOT 1</td>
+              <td class="govuk-table__cell">Michael Jones</td>
+              <td class="govuk-table__cell">FV434459J</td>
               <td class="govuk-table__cell">27 January 2024</td>
-              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+              <td class="govuk-table__cell"> <p><a href="#" class="govuk-link">Update details</a></p> <p><a href="" class="govuk-link">Remove referral</a></p></td>
             </tr>
             <tr class="govuk-table__row" data-category="lot4">
-              <td class="govuk-table__cell">Collins</td>
-              <td class="govuk-table__cell"> </td>
-              <td class="govuk-table__cell"> </td>
-              <td class="govuk-table__cell"> HYTH4564</td>
-               <td class="govuk-table__cell">LOT 4</td>
+              <td class="govuk-table__cell">Jack Collins</td>
+              <td class="govuk-table__cell">BN426459A</td>
               <td class="govuk-table__cell">28 December 2024</td>
-              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+              <td class="govuk-table__cell"> <p><a href="#" class="govuk-link">Update details</a></p> <p><a href="" class="govuk-link">Remove referral</a></p></td>
             </tr>
             <tr class="govuk-table__row" data-category="lot4">
-              <td class="govuk-table__cell">  </td>
-              <td class="govuk-table__cell">Jack</td>
-              <td class="govuk-table__cell"> </td>
-              <td class="govuk-table__cell">CDE4435C</td>
-               <td class="govuk-table__cell">LOT 4</td>
+              <td class="govuk-table__cell">Sarah Ellis</td>
+              <td class="govuk-table__cell">CD426334D</td>
               <td class="govuk-table__cell">20 January 2024</td>
-              <td class="govuk-table__cell"><a href="#" class="govuk-link">Update details</a></td>
+              <td class="govuk-table__cell"> <p><a href="#" class="govuk-link">Update details</a></p> <p><a href="" class="govuk-link">Remove referral</a></p></td>
             </tr>
           </tbody>
         </table>
