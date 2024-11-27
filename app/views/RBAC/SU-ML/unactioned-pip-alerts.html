@@ -8,15 +8,58 @@
 {% block beforeContent %}
 {{ govukBackLink({
   text: "Back",
-  href: "main-menu.html"
+  href: "main-menu-multi-lot.html"
 }) }}
 {% endblock %}
 
 
 {% block content %}
-
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-quarter">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h1 class="govuk-fieldset__heading">
+                Provider lot
+              </h1>
+            </legend>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="lot1" name="organisation" type="checkbox" value="lot1" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="lot1">
+                  LOT 1
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="lot2" name="organisation" type="checkbox" value="lot2" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="lot2">
+                  LOT 2
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="lot3" name="organisation" type="checkbox" value="lot3" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="lot3">
+                  LOT 3
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="lot4" name="organisation" type="checkbox" value="lot4" checked>
+                <label class="govuk-label govuk-checkboxes__label" for="lot4">
+                  LOT 4
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button type="submit" id="applyFiltersButton" class="govuk-button" data-module="govuk-button">
+          Apply filters
+        </button>
+      </div>
   <h1 class="govuk-heading-l">Unactioned PIP Alerts</h1>
 
+<div class="govuk-grid-column-three-quarters">
 <div class="govuk-form-group govuk-!-margin-bottom-0">
 <label class="govuk-label" for="searchNino">
 Enter an NI number
@@ -87,6 +130,7 @@ Enter an NI number
       </div>
     </div>
   </main>
+</div>
 </div>
 
 {% endblock %}
