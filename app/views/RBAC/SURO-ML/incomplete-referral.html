@@ -1,0 +1,84 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "main-menu.html"
+}) }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+        <h1 class="govuk-heading-l">Incomplete referrals</h1>
+        <!-- <form action="create-new-referral" method="post" class="form">
+        <button type="submit" class="govuk-button" data-module="govuk-button" id="assign">
+          Create a new referral
+          </button> -->
+          
+        <table class="govuk-table" id="mytable">
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Claimant name</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">NI number</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Date submitted</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row" data-category="lot1">
+              <td class="govuk-table__cell">Eli Erwin</td>
+              <td class="govuk-table__cell">AS434959F</td>
+              <td class="govuk-table__cell">25 January 2024</td>
+            </tr>
+            <tr class="govuk-table__row" data-category="lot1">
+              <td class="govuk-table__cell">Michael Jones</td>
+              <td class="govuk-table__cell">FV434459J</td>
+              <td class="govuk-table__cell">27 January 2024</td>
+            </tr>
+            <tr class="govuk-table__row" data-category="lot4">
+              <td class="govuk-table__cell">Jack Collins</td>
+              <td class="govuk-table__cell">BN426459A</td>
+              <td class="govuk-table__cell">28 December 2024</td>
+            </tr>
+            <tr class="govuk-table__row" data-category="lot4">
+              <td class="govuk-table__cell">Sarah Ellis</td>
+              <td class="govuk-table__cell">CD426334D</td>
+              <td class="govuk-table__cell">20 January 2024</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="moj-pagination" aria-label="Pagination navigation">
+    
+          <ul class="moj-pagination__list"></ul>
+          <p class="moj-pagination__results">Showing <b>1</b> to <b>4</b> of <b>4</b> referrals</p>
+          </div>
+      </div>
+    </div>
+  </main>
+</div>
+<script>
+  document
+    .getElementById("applyFiltersButton")
+    .addEventListener("click", function () {
+      var checkedCheckboxes = document.querySelectorAll(
+        'input[name="organisation"]:checked'
+      );
+      var rows = document.querySelectorAll("#mytable tbody tr");
+      rows.forEach(function (row) {
+        row.style.display = "none";
+        checkedCheckboxes.forEach(function (checkbox) {
+          if (row.getAttribute("data-category") === checkbox.value) {
+            row.style.display = "";
+          }
+        });
+      });
+    });
+</script>
+{% endblock %}
