@@ -1,0 +1,410 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+  {% include "includes/blue-banner-book-assessment.html" %}
+  <!-- {% include "includes/quick-reference.html" %} -->
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+
+    <a href="inbound-contract.html" class="govuk-back-link">Back</a>
+    <div class="govuk-width-container ">
+      <div role="navigation">
+          
+
+        
+                <main class="govuk-main-wrapper" id="main-content">
+                  
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+              
+        
+              
+        
+        <form action="timeline-add" method="post" autocomplete="off" novalidate="">
+          
+            <input type="hidden" name="csrfToken" value="7fa46630-c9e5-4683-a0d1-fc06372a7d67">
+          
+        
+          
+              
+                
+          <h1 class="govuk-heading-l">Inbound Contact</h1>
+        
+          
+        
+        
+        
+        <div class="govuk-form-group">
+        
+          <fieldset class="govuk-fieldset">
+            
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            
+              Who contacted us about the claim?
+            
+            </legend>
+            
+          
+            <div class="govuk-radios" data-module="govuk-radios" data-govuk-radios-init="">
+              
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whoContacted" name="whoContacted" type="radio" value="CLAIMANT">
+                <label class="govuk-label govuk-radios__label" for="whoContacted">
+                  The claimant
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whoContacted-2" name="whoContacted" type="radio" value="OTHER" aria-describedby="whoContacted-2-item-hint" role="group" aria-controls="conditional-whoContacted-2" aria-expanded="false">
+                <label class="govuk-label govuk-radios__label" for="whoContacted-2">
+                  Another person or organisation
+                </label>
+                
+                <div id="whoContacted-2-item-hint" class="govuk-hint govuk-radios__hint">
+                  For example, the claimant’s representative or GP
+                </div>
+                
+              </div>
+              
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-whoContacted-2">
+                <div class="govuk-form-group">
+            <label class="govuk-label" for="whoContactedOther">
+              Add details of the person or organisation who contacted us
+            </label>
+          
+          
+            <input class="govuk-input govuk-!-width-full-width" id="whoContactedOther" name="whoContactedOther" type="text" spellcheck="false" autocomplete="off">
+          
+          </div>
+              </div>
+              
+            
+              
+              
+            </div>
+          
+          </fieldset>
+        
+        </div>
+        
+        
+          
+        
+          
+        
+          
+        
+          
+            
+        
+            
+          
+            
+        
+            
+          
+            
+        
+            
+          
+            
+        
+            
+          
+            
+        
+            
+          
+        
+          
+        
+        
+        
+        <div class="govuk-form-group">
+        
+          <fieldset class="govuk-fieldset">
+            
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            
+              Why did they contact us?
+            
+            </legend>
+            
+          
+            <div class="govuk-radios" data-module="govuk-radios" data-govuk-radios-init="">
+              
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whyContacted" name="whyContacted" type="radio" value="RETURNED_QUESTIONNAIRE">
+                <label class="govuk-label govuk-radios__label" for="whyContacted">
+                  Returned questionnaire
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whyContacted-2" name="whyContacted" type="radio" value="RESCHEDULED_AN_ASSESSMENT">
+                <label class="govuk-label govuk-radios__label" for="whyContacted-2">
+                  Rescheduled an assessment
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whyContacted-3" name="whyContacted" type="radio" value="PROGRESS_CHASING">
+                <label class="govuk-label govuk-radios__label" for="whyContacted-3">
+                  Progress chasing
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whyContacted-4" name="whyContacted" type="radio" value="WITHDREW_THEIR_CLAIM">
+                <label class="govuk-label govuk-radios__label" for="whyContacted-4">
+                  Withdrew their claim
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="whyContacted-5" name="whyContacted" type="radio" value="OTHER" role="group" aria-controls="conditional-whyContacted-5" aria-expanded="false">
+                <label class="govuk-label govuk-radios__label" for="whyContacted-5">
+                  Other
+                </label>
+                
+              </div>
+              
+              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-whyContacted-5">
+                <div class="govuk-form-group">
+            <label class="govuk-label" for="whyContactedOther">
+              Add a title
+            </label>
+          
+          
+            <input class="govuk-input govuk-!-width-one-half" id="whyContactedOther" name="whyContactedOther" type="text" spellcheck="false" autocomplete="off">
+          
+          </div>
+              </div>
+              
+            
+              
+              
+            </div>
+          
+          </fieldset>
+        
+        </div>
+        
+        
+          <h2 class="govuk-heading-m"> Further information</h2>
+        
+          
+        
+        
+        <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxlength="250" data-govuk-character-count-init="">
+          <label class="govuk-label" for="furtherInfo">
+            Add brief details of any additional information (optional)
+          </label>
+        
+        
+        
+          <textarea class="govuk-textarea govuk-js-character-count" id="furtherInfo" name="furtherInfo" rows="4" aria-describedby="furtherInfo-info" autocomplete="off"></textarea><div id="furtherInfo-info" class="govuk-hint govuk-character-count__message govuk-visually-hidden">
+            You can enter up to 250 characters
+          </div><div class="govuk-hint govuk-character-count__message govuk-character-count__status" aria-hidden="true">You have 250 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite">You have 250 characters remaining</div>
+        
+          
+        
+        </div>
+        
+        
+          
+        
+          
+        
+          
+            
+        
+            
+          
+            
+        
+            
+          
+            
+        
+            
+          
+            
+        
+            
+          
+        
+          
+        
+        
+        
+        <div class="govuk-form-group">
+        
+          <fieldset class="govuk-fieldset">
+            
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            
+              How did they contact us?
+            
+            </legend>
+            
+          
+            <div class="govuk-radios" data-module="govuk-radios" data-govuk-radios-init="">
+              
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="howContacted" name="howContacted" type="radio" value="PHONE">
+                <label class="govuk-label govuk-radios__label" for="howContacted">
+                  Telephone call
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="howContacted-2" name="howContacted" type="radio" value="EMAIL">
+                <label class="govuk-label govuk-radios__label" for="howContacted-2">
+                  Email
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="howContacted-3" name="howContacted" type="radio" value="SMS">
+                <label class="govuk-label govuk-radios__label" for="howContacted-3">
+                  Text message (SMS)
+                </label>
+                
+              </div>
+              
+            
+              
+                
+            
+              
+              
+              
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="howContacted-4" name="howContacted" type="radio" value="POST">
+                <label class="govuk-label govuk-radios__label" for="howContacted-4">
+                  Post
+                </label>
+                
+              </div>
+              
+            
+              
+              
+            </div>
+          
+          </fieldset>
+        
+        </div>
+        
+        
+        
+              
+        
+          
+            <div class="govuk-button-group">
+              
+          
+            
+          
+        
+        <button type="submit" data-prevent-double-click="true" class="govuk-button" data-module="govuk-button" id="continue-button" data-govuk-button-init="">
+          Continue
+        </button>
+        
+            </div>
+          
+        </form>
+        
+            </div>
+          </div>
+        
+                </main>
+              </div>
+{% endblock %}
