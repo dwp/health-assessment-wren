@@ -1,0 +1,355 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+{% include "includes/blue-banner-assessment-booked.html" %}
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+
+    <a href="appointment-booked.html" class="govuk-back-link">Back</a>
+    
+    <div class="govuk-width-container ">
+      <div role="navigation">
+          
+      </div>
+      <div class="govuk-grid-row notification-banner">
+          
+
+
+      </div>
+      <div class="govuk-grid-row govuk-main-wrapper govuk-main-wrapper--auto-spacing">
+          <div class="govuk-grid-column-one-quarter">
+              
+
+
+<nav class="dwp-side-navigation" aria-label="Side" role="navigation">
+<ul class="dwp-side-navigation__list">
+  
+      
+      
+      <li class="dwp-side-navigation__item dwp-side-navigation__item--selected">
+        <a id="referral-overview" href="XX" class="dwp-side-navigation__link dwp-side-navigation__link--selected" aria-current="true">
+            Referral overview
+        </a>
+        
+          <ul class="dwp-side-navigation__list dwp-side-navigation__list--sub-item">
+            
+              <li class="dwp-side-navigation__sub-item">
+                <a href="#referral-details" class="dwp-side-navigation__link">
+                  Referral details
+                </a>
+              </li>
+            
+          </ul>
+        
+      </li>
+  
+      
+      
+      <li class="dwp-side-navigation__item">
+        <a id="claimant-details" href="claimant-detail-p-ab.html" class="dwp-side-navigation__link">
+            Claimant details
+        </a>
+        
+      </li>
+  
+</ul>
+</nav>
+
+
+          </div>
+          <div class="govuk-grid-column-one-half">
+              <main id="main-content">
+                  
+<h1 id="referral-details" class="govuk-heading-m">Referral details</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="govuk-summary-list" id="referral-details">
+
+
+<div class="govuk-summary-list__row srel">
+<dt class="govuk-summary-list__key">
+Special rules end of life
+</dt>
+<dd class="govuk-summary-list__value">
+Yes
+</dd>
+
+<dd class="govuk-summary-list__actions">
+      <a class="govuk-link change" href="srel-yes.html">Change<span class="govuk-visually-hidden"> special rules end of life</span></a>
+
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row consent">
+<dt class="govuk-summary-list__key">
+Consent for medical evidence
+</dt>
+<dd class="govuk-summary-list__value">
+Yes
+</dd>
+
+<dd class="govuk-summary-list__actions">
+      <a class="govuk-link change" href="cfme.html">Change<span class="govuk-visually-hidden"> medical evidence consent</span></a>
+
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row kcis">
+<dt class="govuk-summary-list__key">
+Safety measures
+</dt>
+<dd class="govuk-summary-list__value">
+Not known
+</dd>
+
+<dd class="govuk-summary-list__actions">
+      <a class="govuk-link change" href="safety-measures.html">Change<span class="govuk-visually-hidden"> safety measures</span></a>
+
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row mental-health-condition">
+<dt class="govuk-summary-list__key">
+Additional support needs
+</dt>
+<dd class="govuk-summary-list__value">
+Not known
+</dd>
+
+<dd class="govuk-summary-list__actions">
+      <a class="govuk-link change" href="additional-support">Change<span class="govuk-visually-hidden"> mental health</span></a>
+
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions referral-date">
+<dt class="govuk-summary-list__key">
+Referral date
+</dt>
+<dd class="govuk-summary-list__value">
+4 October 2024
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions benefit-type">
+<dt class="govuk-summary-list__key">
+Benefit type
+</dt>
+<dd class="govuk-summary-list__value">
+ESA
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions referral-type">
+<dt class="govuk-summary-list__key">
+Referral type
+</dt>
+<dd class="govuk-summary-list__value">
+New referral
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions site-name">
+<dt class="govuk-summary-list__key">
+Assessment centre
+</dt>
+<dd class="govuk-summary-list__value">
+Tresco House
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions caseload-name">
+<dt class="govuk-summary-list__key">
+Caseload
+</dt>
+<dd class="govuk-summary-list__value">
+DST
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions next-action-due-date">
+<dt class="govuk-summary-list__key">
+Next action due in
+</dt>
+<dd class="govuk-summary-list__value">
+19 Days
+</dd>
+
+</div>
+
+
+</dl>
+
+
+
+
+
+              </main>
+          </div>
+          <div class="govuk-grid-column-one-quarter">
+              
+
+<div class="app-related-items" role="complementary">
+
+<div class="has-action-list">
+<h2 class="govuk-heading-m" id="subsection-title">
+What you can do next
+</h2>
+<nav aria-labelledby="subsection-title">
+<ul class="govuk-list">
+
+  <li>
+    
+      <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Update status</a>
+    
+    
+          </li>
+        
+  <li>
+
+    <li>
+      <li>
+    
+        <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Complete assessment</a>
+      
+      
+            </li>
+            <li>
+    
+              <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Complete assessment - legacy</a>
+            
+            
+                  </li>
+          
+    <li>
+  
+      <li>
+    
+      <a href="timeline.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">View timeline</a>
+    
+    
+          </li>
+        
+  <li>
+    <li>
+    
+      <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Add entry to timeline</a>
+    
+    
+          </li>
+        
+  <li>
+    <li>
+    
+      <a href="claimant-documents.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">View claimants documents</a>
+    
+    
+          </li>
+        
+  <li>
+
+    <li>
+      <!-- <li>
+      
+        <a href="hcp-review.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">HCP review</a>
+      
+      
+            </li> -->
+            <li>
+
+              <li>
+                <li>
+                
+                  <a href="Assessment.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Book or view appointment</a>
+                
+                
+                      </li>
+          
+    <li>
+
+      <li>
+        <li>
+        
+          <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Move to another caseload</a>
+        
+        
+              </li>
+            
+      <li>
+    
+    
+     
+      </ul>
+    </nav>
+  </div>
+
+</div>
+
+
+          </div>
+      </div>
+  </div>
+<div role="navigation">
+          
+     </div>
+
+{% endblock %}

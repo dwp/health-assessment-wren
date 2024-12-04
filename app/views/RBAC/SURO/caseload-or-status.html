@@ -1,25 +1,35 @@
 {% extends "layouts/main.html" %}
 
 {% block pageTitle %}
-  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+Home – {{serviceName}} – GOV.UK Prototype Kit
 {% endblock %}
 
-
-{% block beforeContent %}
-
-{% endblock %}
 {% block content %}
 
-<a href="main-menu.html" class="govuk-back-link">Back</a>
+ 
+
+<script>
+  function getRadioValue() {
+    const element = document.getElementsByName('status');
+    for (let i = 0; i < element.length; i++) {
+      if (element[i].checked) {
+        window.location.href = element[i].value;
+      }
+    }
+  }
+</script>
+ 
 <div class="govuk-grid-row" style="margin-top: -40px;">
   <div class="govuk-grid-column-full">
+
+    <a href="main-menu.html" class="govuk-back-link">Back</a>
 
 <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
           
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <form action="book-assessment" method="post" class="form">
+      <form action="javascript:getRadioValue()" method="post" class="form">
 
         <div class="govuk-form-group">
           <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
@@ -73,105 +83,105 @@
                 <div class="govuk-form-group">
                   <div class="govuk-radios--small">
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-1" name="status" type="radio" value="assigned">
+                      <input class="govuk-radios__input" id="status-1" name="status" type="radio" value="assigned-referrals">
                       <label class="govuk-label govuk-radios__label" for="status-1">
                         Assigned (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="awaiting-questionnaire-wca">
+                      <input class="govuk-radios__input" id="status-2" name="status" type="radio" value="awaiting-questionnaire">
                       <label class="govuk-label govuk-radios__label" for="status-2">
-                        Awaiting questionnaire (120)
+                        Awaiting questionnaire (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="questionnaire-reminder-issued">
+                      <input class="govuk-radios__input" id="status-3" name="status" type="radio" value="questionnaire-reminder-sent">
                       <label class="govuk-label govuk-radios__label" for="status-3">
-                        Questionnaire reminder sent (65)
+                        Questionnaire reminder sent (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="questionnaire-received">
+                      <input class="govuk-radios__input" id="status-4" name="status" type="radio" value="questionnaire-not-returned">
                       <label class="govuk-label govuk-radios__label" for="status-4">
-                        Questionnaire not returned (25)
+                        Questionnaire not returned (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-5" name="status" type="radio" value="questionnaire-not-received-mh">
+                      <input class="govuk-radios__input" id="status-5" name="status" type="radio" value="hcp-review-result">
                       <label class="govuk-label govuk-radios__label" for="status-5">
-                        HCP review (7)
+                        HCP review (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-6" name="status" type="radio" value="ftrq-action-needed">
+                      <input class="govuk-radios__input" id="status-6" name="status" type="radio" value="request-medical-evidence">
                       <label class="govuk-label govuk-radios__label" for="status-6">
-                        Request medical evidence (4)
+                        Request medical evidence (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status-7" name="status" type="radio" value="awaiting-evidence">
                       <label class="govuk-label govuk-radios__label" for="status-7">
-                        Awaiting medical evidence (76)
+                        Awaiting medical evidence (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status-9" name="status" type="radio" value="evidence-not-received">
                       <label class="govuk-label govuk-radios__label" for="status-9">
-                        Medical evidence not received (22)
+                        Medical evidence not received (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status-8" name="status" type="radio" value="evidence-received">
                       <label class="govuk-label govuk-radios__label" for="status-8">
-                        Medical evidence received (36)
+                        Medical evidence received (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-16" name="status" type="radio" value="book-assessment">
+                      <input class="govuk-radios__input" id="status-16" name="status" type="radio" value="book-appointment">
                       <label class="govuk-label govuk-radios__label" for="status-16">
-                        Book assessment (22)
+                        Book appointment (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-17" name="status" type="radio" value="book-pbr">
+                      <input class="govuk-radios__input" id="status-17" name="status" type="radio" value="appointment-booked">
                       <label class="govuk-label govuk-radios__label" for="status-17">
-                        Assessment booked (31)
+                        Appointment booked (31)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-19" name="status" type="radio" value="pbr-booked">
+                      <input class="govuk-radios__input" id="status-19" name="status" type="radio" value="pip-paper-based-review">
                       <label class="govuk-label govuk-radios__label" for="status-19">
-                        PIP paper based review (29)
+                        PIP paper based review (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-19" name="status" type="radio" value="pbr-booked">
+                      <input class="govuk-radios__input" id="status-19" name="status" type="radio" value="WCA-paper-based-review">
                       <label class="govuk-label govuk-radios__label" for="status-19">
-                        WCA paper based review (19)
+                        WCA paper based review (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-20" name="status" type="radio" value="fta-action-needed">
+                      <input class="govuk-radios__input" id="status-20" name="status" type="radio" value="failed-to-attend">
                       <label class="govuk-label govuk-radios__label" for="status-20">
-                        Failed to attend (19)
+                        Failed to attend (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
                       <input class="govuk-radios__input" id="status-22" name="status" type="radio" value="report-ready">
                       <label class="govuk-label govuk-radios__label" for="status-22">
-                        Report ready (15)
+                        Report ready (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-23" name="status" type="radio" value="bau-decision-needed">
+                      <input class="govuk-radios__input" id="status-23" name="status" type="radio" value="hcp-audit">
                       <label class="govuk-label govuk-radios__label" for="status-23">
-                        HCP audit (37)
+                        HCP audit (50)
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="status-24" name="status" type="radio" value="wca-completed">
+                      <input class="govuk-radios__input" id="status-24" name="status" type="radio" value="assessment-not-completed">
                       <label class="govuk-label govuk-radios__label" for="status-24">
-                        PIPCS descriptors updated (67)
+                        Assessment not completed (50)
                       </label>
                     </div>
                   </div>
