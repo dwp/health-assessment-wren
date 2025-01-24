@@ -6,7 +6,7 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 
 {% block header %}
 
-{% include "includes/blue-banner-shcpa.html" %}
+{% include "includes/blue-banner-ra.html" %}
 
 
 {% endblock %}
@@ -17,16 +17,18 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 <div class="govuk-grid-row" style="margin-top: -40px;">
   <div class="govuk-grid-column-two-thirds">
 
-    <a href="senior-hcp-advice.html" class="govuk-back-link">Back</a>
+    <a href="rebook-appointment.html" class="govuk-back-link">Back</a>
     
     <div class="govuk-width-container ">
       <div role="navigation">
           
       </div>
       <div class="govuk-grid-row notification-banner">
-        
+          
+
+
       </div>
-        <div class="govuk-grid-row govuk-main-wrapper govuk-main-wrapper--auto-spacing">
+      <div class="govuk-grid-row govuk-main-wrapper govuk-main-wrapper--auto-spacing">
           <div class="govuk-grid-column-one-quarter">
               
 
@@ -36,35 +38,29 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
   
       
       
-      <li class="dwp-side-navigation__item">
-        <a id="referral-overview" href="claimant-detail-shcpa.html" class="dwp-side-navigation__link">
-            Referral overview
-        </a>
-        
-      </li>
-  
-      
-      
       <li class="dwp-side-navigation__item dwp-side-navigation__item--selected">
-        <a id="claimant-details" href="" class="dwp-side-navigation__link dwp-side-navigation__link--selected" aria-current="true">
-            Claimant details
+        <a id="referral-overview" href="XX" class="dwp-side-navigation__link dwp-side-navigation__link--selected" aria-current="true">
+            Referral overview
         </a>
         
           <ul class="dwp-side-navigation__list dwp-side-navigation__list--sub-item">
             
               <li class="dwp-side-navigation__sub-item">
-                <a href="#personal-details" class="dwp-side-navigation__link">
-                  Personal details
-                </a>
-              </li>
-            
-              <li class="dwp-side-navigation__sub-item">
-                <a href="#contact-information" class="dwp-side-navigation__link">
-                  Contact information
+                <a href="#referral-details" class="dwp-side-navigation__link">
+                  Referral details
                 </a>
               </li>
             
           </ul>
+        
+      </li>
+  
+      
+      
+      <li class="dwp-side-navigation__item">
+        <a id="claimant-details" href="claimant-detail-p-ra.html" class="dwp-side-navigation__link">
+            Claimant details
+        </a>
         
       </li>
   
@@ -76,7 +72,16 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
           <div class="govuk-grid-column-one-half">
               <main id="main-content">
                   
-<h1 id="personal-details" class="govuk-heading-m">Personal details</h1>
+<h1 id="referral-details" class="govuk-heading-m">Referral details</h1>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -102,7 +107,7 @@ Yes
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="srel-yes.html">Change<span class="govuk-visually-hidden"> special rules end of life</span></a>
+      <!-- <a class="govuk-link change" href="srel-yes.html">Change<span class="govuk-visually-hidden"> special rules end of life</span></a> -->
 
 </dd>
 
@@ -119,7 +124,7 @@ Yes
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="cfme.html">Change<span class="govuk-visually-hidden"> medical evidence consent</span></a>
+      <!-- <a class="govuk-link change" href="cfme.html">Change<span class="govuk-visually-hidden"> medical evidence consent</span></a> -->
 
 </dd>
 
@@ -136,7 +141,7 @@ Not known
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="safety-measures.html">Change<span class="govuk-visually-hidden"> safety measures</span></a>
+      <!-- <a class="govuk-link change" href="safety-measures.html">Change<span class="govuk-visually-hidden"> safety measures</span></a> -->
 
 </dd>
 
@@ -153,7 +158,7 @@ Not known
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="additional-support">Change<span class="govuk-visually-hidden"> mental health</span></a>
+      <!-- <a class="govuk-link change" href="additional-support">Change<span class="govuk-visually-hidden"> mental health</span></a> -->
 
 </dd>
 
@@ -252,16 +257,20 @@ What you can do next
 <nav aria-labelledby="subsection-title">
 <ul class="govuk-list">
 
-  <li>
+  <!-- <li>
     
       <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Update status</a>
     
     
-          </li>
+          </li> -->
         
   <li>
 
+
+          
     <li>
+  
+      <li>
     
       <a href="timeline.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">View timeline</a>
     
@@ -269,12 +278,12 @@ What you can do next
           </li>
         
   <li>
-    <li>
+    <!-- <li>
     
       <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Add entry to timeline</a>
     
     
-          </li>
+          </li> -->
         
   <li>
     <li>
@@ -293,16 +302,25 @@ What you can do next
       
       
             </li>
+            <li>
+
+              <li>
+                <li>
+                
+                  <a href="Assessment.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Book or view appointment</a>
+                
+                
+                      </li>
           
     <li>
 
       <li>
-        <li>
+        <!-- <li>
         
           <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Move to another caseload</a>
         
         
-              </li>
+              </li> -->
             
       <li>
     

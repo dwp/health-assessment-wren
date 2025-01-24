@@ -6,7 +6,7 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 
 {% block header %}
 
-{% include "includes/blue-banner-shcpa.html" %}
+{% include "includes/blue-banner-ra.html" %}
 
 
 {% endblock %}
@@ -17,7 +17,7 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 <div class="govuk-grid-row" style="margin-top: -40px;">
   <div class="govuk-grid-column-two-thirds">
 
-    <a href="senior-hcp-advice.html" class="govuk-back-link">Back</a>
+    <a href="rebook-appointment.html" class="govuk-back-link">Back</a>
     
     <div class="govuk-width-container ">
       <div role="navigation">
@@ -37,7 +37,7 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
       
       
       <li class="dwp-side-navigation__item">
-        <a id="referral-overview" href="claimant-detail-shcpa.html" class="dwp-side-navigation__link">
+        <a id="referral-overview" href="claimant-detail-ra.html" class="dwp-side-navigation__link">
             Referral overview
         </a>
         
@@ -90,19 +90,19 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 
 
 
-<dl class="govuk-summary-list" id="referral-details">
+<dl class="govuk-summary-list" id="personal-details">
 
 
-<div class="govuk-summary-list__row srel">
+<div class="govuk-summary-list__row full-name">
 <dt class="govuk-summary-list__key">
-Special rules end of life
+Full name
 </dt>
 <dd class="govuk-summary-list__value">
-Yes
+Jane Doe
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="srel-yes.html">Change<span class="govuk-visually-hidden"> special rules end of life</span></a>
+      <!-- <a class="govuk-link change" href="claimant-name" id="edit-full-name">Change<span class="govuk-visually-hidden"> full name</span></a> -->
 
 </dd>
 
@@ -110,16 +110,16 @@ Yes
 
 
 
-<div class="govuk-summary-list__row consent">
+<div class="govuk-summary-list__row date-of-death">
 <dt class="govuk-summary-list__key">
-Consent for medical evidence
+Date of death
 </dt>
 <dd class="govuk-summary-list__value">
-Yes
+
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="cfme.html">Change<span class="govuk-visually-hidden"> medical evidence consent</span></a>
+      <!-- <a class="govuk-link change" href="date-of-death.html">Add<span class="govuk-visually-hidden"> date of death</span></a> -->
 
 </dd>
 
@@ -127,16 +127,40 @@ Yes
 
 
 
-<div class="govuk-summary-list__row kcis">
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions preferred-name">
 <dt class="govuk-summary-list__key">
-Safety measures
+Preferred name
 </dt>
 <dd class="govuk-summary-list__value">
-Not known
+Jane
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row govuk-summary-list__row--no-actions postcode">
+<dt class="govuk-summary-list__key">
+Postcode
+</dt>
+<dd class="govuk-summary-list__value">
+E5 3ER
+</dd>
+
+</div>
+
+
+
+<div class="govuk-summary-list__row mobile-number">
+<dt class="govuk-summary-list__key">
+Mobile phone number
+</dt>
+<dd class="govuk-summary-list__value">
+
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="safety-measures.html">Change<span class="govuk-visually-hidden"> safety measures</span></a>
+      <!-- <a class="govuk-link change" href="mobile.html">Add<span class="govuk-visually-hidden"> mobile number</span></a> -->
 
 </dd>
 
@@ -144,89 +168,28 @@ Not known
 
 
 
-<div class="govuk-summary-list__row mental-health-condition">
+<div class="govuk-summary-list__row alternate-number">
 <dt class="govuk-summary-list__key">
-Additional support needs
+Alternative phone number
 </dt>
 <dd class="govuk-summary-list__value">
-Not known
+0162329876
 </dd>
 
 <dd class="govuk-summary-list__actions">
-      <a class="govuk-link change" href="additional-support">Change<span class="govuk-visually-hidden"> mental health</span></a>
 
-</dd>
+<ul class="govuk-summary-list__actions-list">
+  
+  <li class="govuk-summary-list__actions-list-item">
+    <!-- <a class="govuk-link change" href="mobile-2.html">Change<span class="govuk-visually-hidden"> alternative number</span></a> -->
+  </li>
+  
+  <li class="govuk-summary-list__actions-list-item">
+    <!-- <a class="govuk-link remove" href="remove.html">Remove<span class="govuk-visually-hidden"> alternative number</span></a> -->
+  </li>
+  
+</ul>
 
-</div>
-
-
-
-<div class="govuk-summary-list__row govuk-summary-list__row--no-actions referral-date">
-<dt class="govuk-summary-list__key">
-Referral date
-</dt>
-<dd class="govuk-summary-list__value">
-4 October 2024
-</dd>
-
-</div>
-
-
-
-<div class="govuk-summary-list__row govuk-summary-list__row--no-actions benefit-type">
-<dt class="govuk-summary-list__key">
-Benefit type
-</dt>
-<dd class="govuk-summary-list__value">
-ESA
-</dd>
-
-</div>
-
-
-
-<div class="govuk-summary-list__row govuk-summary-list__row--no-actions referral-type">
-<dt class="govuk-summary-list__key">
-Referral type
-</dt>
-<dd class="govuk-summary-list__value">
-New referral
-</dd>
-
-</div>
-
-
-
-<div class="govuk-summary-list__row govuk-summary-list__row--no-actions site-name">
-<dt class="govuk-summary-list__key">
-Assessment centre
-</dt>
-<dd class="govuk-summary-list__value">
-Tresco House
-</dd>
-
-</div>
-
-
-
-<div class="govuk-summary-list__row govuk-summary-list__row--no-actions caseload-name">
-<dt class="govuk-summary-list__key">
-Caseload
-</dt>
-<dd class="govuk-summary-list__value">
-DST
-</dd>
-
-</div>
-
-
-
-<div class="govuk-summary-list__row govuk-summary-list__row--no-actions next-action-due-date">
-<dt class="govuk-summary-list__key">
-Next action due in
-</dt>
-<dd class="govuk-summary-list__value">
-19 Days
 </dd>
 
 </div>
@@ -234,7 +197,30 @@ Next action due in
 
 </dl>
 
+<h2 id="contact-information" class="govuk-heading-m">Contact information</h2>
 
+
+
+<dl class="govuk-summary-list" id="contact-information">
+
+
+<div class="govuk-summary-list__row interpreter">
+<dt class="govuk-summary-list__key">
+Interpreter information
+</dt>
+<dd class="govuk-summary-list__value">
+
+</dd>
+
+<dd class="govuk-summary-list__actions">
+      <!-- <a class="govuk-link change" href="interpretor.html">Add<span class="govuk-visually-hidden"> interpreter information</span></a> -->
+
+</dd>
+
+</div>
+
+
+</dl>
 
 
 
@@ -250,18 +236,22 @@ Next action due in
 What you can do next
 </h2>
 <nav aria-labelledby="subsection-title">
-<ul class="govuk-list">
-
-  <li>
+  <ul class="govuk-list">
+<!-- 
+    <li>
     
       <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Update status</a>
     
     
-          </li>
+          </li> -->
         
   <li>
 
+
+          
     <li>
+  
+      <li>
     
       <a href="timeline.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">View timeline</a>
     
@@ -269,12 +259,12 @@ What you can do next
           </li>
         
   <li>
-    <li>
+    <!-- <li>
     
       <a href="status.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Add entry to timeline</a>
     
     
-          </li>
+          </li> -->
         
   <li>
     <li>
@@ -293,16 +283,25 @@ What you can do next
       
       
             </li>
+            <li>
+
+              <li>
+                <li>
+                
+                  <a href="Assessment.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Book or view appointment</a>
+                
+                
+                      </li>
           
     <li>
 
       <li>
-        <li>
+        <!-- <li>
         
           <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Move to another caseload</a>
         
         
-              </li>
+              </li> -->
             
       <li>
     
