@@ -1,0 +1,316 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+  {% include "includes/blue-banner-book-assessment.html" %}
+  <!-- {% include "includes/quick-reference.html" %} -->
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-width-container">
+    <a href="claimant-detail-nav.html" class="govuk-back-link">Back</a>
+
+    <div class="column-full">
+      <nav class="navigation-secondary" style="margin-left: 0px !important; margin-right: 0px !important;">
+        <ul>
+          <li>
+            <a href="claimant-detail-nav.html">Referral overview</a>
+          </li>
+
+          <li>
+            <a href="timeline">Timeline</a>
+          </li>
+          <li>
+            <a href="claimant-documents" class="active" aria-current="section">Claimant documents</a>
+          </li>
+  
+          <li>
+            <a href="hcp-review">HCP review</a>
+          </li>
+  
+          <li>
+            <a href="">Assessment</a>
+          </li>
+
+          <li>
+            <a href="">Report</a>
+          </li>
+
+        </ul>
+      </nav>
+      <div role="navigation">
+          
+      </div>
+      <div class="govuk-grid-row notification-banner">
+    <div class="govuk-grid-column-two-thirds">
+        
+      <div class="govuk-width-container ">
+        <div role="navigation">
+            
+        </div>
+      <div class="govuk-grid-row" style="margin-top: 40px;">
+        <div class="govuk-grid-column-one-quarter">
+          <h2 for="document-filters-group" class="govuk-heading-m govuk-!-margin-bottom-3">
+            Manage
+          </h2>
+          <p class="govuk-body">
+            <a href="/ui-sdocs_qa01_sdocs/documents/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/update-details" class="govuk-link">Update document details</a>
+          </p>
+        </div>
+        <div class="govuk-grid-column-three-quarters">
+          <h1 class="govuk-heading-l">Claimant documents</h1>
+            
+          <p id="last-refreshed-text" class="govuk-body-s">
+            
+              Last updated from DRS on 12 November 2024 at 1:16pm
+            
+          </p>
+          
+            <div>
+              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+                  
+                    <table class="govuk-table" id="documents">
+    
+    
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+        
+          <th scope="col" class="govuk-table__header column-width-20" aria-sort="none">Name</th>
+        
+          <th scope="col" class="govuk-table__header column-width-15" aria-sort="none">
+        <form method="get" action="/ui-sdocs_qa01_sdocs/documents/66a1193cabc33d78862a2dee/66fff5649d175e7518615595">
+            
+            <input type="hidden" name="sort" value="benefit;asc,received-date;desc">
+            <button type="submit">Benefit type</button>
+        </form>
+    </th>
+        
+          <th scope="col" class="govuk-table__header column-width-15" aria-sort="none">
+        <form method="get" action="/ui-sdocs_qa01_sdocs/documents/66a1193cabc33d78862a2dee/66fff5649d175e7518615595">
+            
+            <input type="hidden" name="sort" value="document-date;asc,received-date;desc">
+            <button type="submit">Date of document</button>
+        </form>
+    </th>
+        
+          <th scope="col" class="govuk-table__header column-width-15" aria-sort="descending">
+        <form method="get" action="/ui-sdocs_qa01_sdocs/documents/66a1193cabc33d78862a2dee/66fff5649d175e7518615595">
+            
+            <input type="hidden" name="sort" value="received-date;asc">
+            <button type="submit">Date DWP received</button>
+        </form>
+    </th>
+        
+        </tr>
+      </thead>
+    
+      <tbody class="govuk-table__body">
+    
+      
+        <tr class="govuk-table__row">
+        
+          
+          
+          <td class="govuk-table__cell"><a data-col="doc-type" href="/ui-sdocs_qa01_sdocs/document/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/{e6c57605-bdb0-40b1-93fa-a74e9d3ed8a5}" class="govuk-link">AP Assessment Report</a></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">PIP</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">25 Apr 2023</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">31 Oct 2024</td>
+          
+        
+        </tr>
+      
+    
+      
+        <tr class="govuk-table__row">
+        
+          
+          
+          <td class="govuk-table__cell"><a data-col="doc-type" href="/ui-sdocs_qa01_sdocs/document/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/{2520a8c2-0ea0-4a20-b11d-c62c9dc02134}" class="govuk-link">Pharmacy document</a></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">PIP</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">1 Jan 2024</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">27 Sep 2024</td>
+          
+        
+        </tr>
+      
+    
+      
+        <tr class="govuk-table__row">
+        
+          
+          
+          <td class="govuk-table__cell"><a data-col="doc-type" href="/ui-sdocs_qa01_sdocs/document/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/{38992bcf-fc27-441d-bbeb-97dfd44fc96b}" class="govuk-link">AP Assessment Report</a></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">PIP</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell"></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">17 Sep 2024</td>
+          
+        
+        </tr>
+      
+    
+      
+        <tr class="govuk-table__row">
+        
+          
+          
+          <td class="govuk-table__cell"><a data-col="doc-type" href="/ui-sdocs_qa01_sdocs/document/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/{ab9fc276-97bb-4bf0-9b16-2a974285f908}" class="govuk-link">AP Assessment Report</a></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">PIP</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell"></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">17 Sep 2024</td>
+          
+        
+        </tr>
+      
+    
+      
+        <tr class="govuk-table__row">
+        
+          
+          
+          <td class="govuk-table__cell"><a data-col="doc-type" href="/ui-sdocs_qa01_sdocs/document/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/{744bd6e4-893a-4366-a8c5-3cc6b0c49f4d}" class="govuk-link">Appeal info</a></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">PIP</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">1 Feb 2024</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">15 Aug 2024</td>
+          
+        
+        </tr>
+      
+    
+      
+        <tr class="govuk-table__row">
+        
+          
+          
+          <td class="govuk-table__cell"><a data-col="doc-type" href="/ui-sdocs_qa01_sdocs/document/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/{88735020-30d9-4055-9031-c9a5c56eaef7}" class="govuk-link">Cardiology document</a></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">PIP</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">25 May 2024</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">15 Aug 2024</td>
+          
+        
+        </tr>
+      
+    
+      
+        <tr class="govuk-table__row">
+        
+          
+          
+          <td class="govuk-table__cell"><a data-col="doc-type" href="/ui-sdocs_qa01_sdocs/document/66a1193cabc33d78862a2dee/66fff5649d175e7518615595/{f82193c7-d17b-41ae-b532-9973f2655627}" class="govuk-link">AP Assessment Report</a></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">PIP</td>
+          
+        
+          
+          
+          <td class="govuk-table__cell"></td>
+          
+        
+          
+          
+          <td class="govuk-table__cell">25 Jul 2024</td>
+          
+        
+        </tr>
+      
+    
+      </tbody>
+    </table>
+    
+                    
+                      
+                    
+                    <nav class="moj-pagination" aria-label="Pagination navigation">
+    
+      <ul class="moj-pagination__list"></ul>
+        <p class="moj-pagination__results">Showing <b>1</b> to <b>7</b> of <b>7</b> documents</p>
+      </nav>
+    </div>
+              
+            </div>
+          </div>
+
+{% endblock %}

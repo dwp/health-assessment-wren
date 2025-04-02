@@ -1,0 +1,301 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block header %}
+
+  {% include "includes/blue-banner-book-assessment.html" %}
+  <!-- {% include "includes/quick-reference.html" %} -->
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-width-container">
+    <a href="claimant-detail-nav.html" class="govuk-back-link">Back</a>
+
+    <div class="column-full">
+      <nav class="navigation-secondary" style="margin-left: 0px !important; margin-right: 0px !important;">
+        <ul>
+          <li>
+            <a href="claimant-detail-nav.html">Referral overview</a>
+          </li>
+
+          <li>
+            <a href="timeline">Timeline</a>
+          </li>
+          <li>
+            <a href="claimant-documents">Claimant documents</a>
+          </li>
+  
+          <li>
+            <a href="hcp-review" class="active" aria-current="section">HCP review</a>
+          </li>
+  
+          <li>
+            <a href="">Assessment</a>
+          </li>
+
+          <li>
+            <a href="">Report</a>
+          </li>
+          
+        </ul>
+      </nav>
+      <div role="navigation">
+          
+      </div>
+  <div class="govuk-grid-column-two-thirds">
+
+    <div class="govuk-width-container ">
+        <main class="govuk-main-wrapper" id="main-content" role="main">
+        
+
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+        
+                    
+        
+                    <form action="hcp-review-2" method="post">
+        
+                        <h1 class="govuk-heading-l">HCP Review</h1>
+        
+                        
+                        
+        
+                          
+        
+        
+        
+        
+        
+        
+        <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="7500" data-threshold="100">
+          
+        
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-label--s" for="clinicalReviewText">
+            Enter clinical review and justification
+          </label>
+        
+          
+          
+          <div id="clinicalReviewText-hint" class="govuk-hint">
+            Include whether evidence has been reviewed, the type of FME requested, and what to do if it's not returned.
+          </div>
+        
+        
+          <textarea class="govuk-textarea govuk-js-character-count" id="clinicalReviewText" name="clinicalReviewText" rows="12" aria-describedby="clinicalReviewText-info clinicalReviewText-hint"></textarea><div id="clinicalReviewText-info" class="govuk-hint govuk-character-count__message govuk-visually-hidden">
+          You can enter up to 7500 characters
+        </div><div class="govuk-hint govuk-character-count__message govuk-character-count__status govuk-character-count__message--disabled" aria-hidden="true">You have 7,500 characters remaining</div><div class="govuk-character-count__sr-status govuk-visually-hidden" aria-live="polite" aria-hidden="true">You have 7,500 characters remaining</div>
+        </div>
+        
+          
+          
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <div class="govuk-form-group">
+        
+          <fieldset class="govuk-fieldset" aria-describedby="caseType-hint">
+          
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+          
+            Is the case one of the following?
+          
+          </legend>
+          
+        
+          <div id="caseType-hint" class="govuk-hint">
+            Select all that apply.
+          </div>
+        
+        
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            
+              
+                  
+                
+                  
+                  
+                  
+                  
+                  
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="caseType" name="caseType" type="checkbox" value="complexNeurological">
+                    <label class="govuk-label govuk-checkboxes__label" for="caseType">
+                Complex neurological (WCA only)
+              </label>
+                    
+                  </div>
+                  
+                
+              
+            
+              
+                
+                  
+                  
+                  
+                  
+                  
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="caseType-2" name="caseType" type="checkbox" value="tact">
+                    <label class="govuk-label govuk-checkboxes__label" for="caseType-2">
+                TACT — take additional care (PIP only)
+              </label>
+                    
+                  </div>
+                  
+                
+              
+            
+          </div>
+          
+        
+        </fieldset>
+        
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="govuk-form-group">
+        
+          <fieldset class="govuk-fieldset">
+          
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+          
+            What is the outcome of this review?
+          
+          </legend>
+          
+        
+          <div class="govuk-radios" data-module="govuk-radios">
+            
+              
+                  
+                
+                
+                
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="clinicalReviewOutcome" name="clinicalReviewOutcome" type="radio" value="requestFme">
+                  <label class="govuk-label govuk-radios__label" for="clinicalReviewOutcome">
+                Request further medical evidence (FME)
+              </label>
+                  
+                </div>
+                
+                
+              
+            
+              
+                
+                
+                
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="clinicalReviewOutcome-2" name="clinicalReviewOutcome" type="radio" value="pbr">
+                  <label class="govuk-label govuk-radios__label" for="clinicalReviewOutcome-2">
+                Paper based review (PBR)
+              </label>
+                  
+                </div>
+                
+                
+              
+            
+              
+                
+                
+                
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="clinicalReviewOutcome-3" name="clinicalReviewOutcome" type="radio" value="telephoneAssessment">
+                  <label class="govuk-label govuk-radios__label" for="clinicalReviewOutcome-3">
+                Telephone assessment
+              </label>
+                  
+                </div>
+                
+                
+              
+            
+              
+                
+                
+                
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="clinicalReviewOutcome-4" name="clinicalReviewOutcome" type="radio" value="faceToFaceAssessment">
+                  <label class="govuk-label govuk-radios__label" for="clinicalReviewOutcome-4">
+                Face to face assessment
+              </label>
+                  
+                </div>
+                
+                
+              
+            
+              
+                
+                
+                
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="clinicalReviewOutcome-5" name="clinicalReviewOutcome" type="radio" value="srel">
+                  <label class="govuk-label govuk-radios__label" for="clinicalReviewOutcome-5">
+                Special rules for end of life (SREL)
+              </label>
+                  
+                </div>
+                
+                
+              
+            
+          </div>
+          
+        
+        </fieldset>
+        
+        
+        </div>
+        
+        
+                        
+        
+                        <input type="hidden" name="csrf" value="gySVsDOt-OFJCbAh1vqAubhRzVd3YmWqjZ2I">
+        
+                        
+                            
+        
+          
+            
+          
+        
+        <button class="govuk-button" data-module="govuk-button">
+          Save
+        </button>
+        
+                        
+        
+        
+        
+                    </form>
+                </div>
+            </div>
+        
+        
+              </main>
+              
+{% endblock %}
