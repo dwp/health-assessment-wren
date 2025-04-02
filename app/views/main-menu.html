@@ -1,0 +1,131 @@
+{% extends "layouts/main.html" %}
+{% block header %}
+{{
+  dwpHeader({
+      name: "Health Assessment Service",
+      serviceHref: '/',
+      container: true
+  })
+  
+}}
+<div>
+  <div class="govuk-service-navigation"
+    data-module="govuk-service-navigation">
+    <div class="govuk-width-container">
+      <div class="govuk-service-navigation__container">
+        <nav aria-label="Menu" class="govuk-service-navigation__wrapper">
+          <button type="button" class="govuk-service-navigation__toggle govuk-js-service-navigation-toggle" aria-controls="navigation" hidden>
+            Manage referrals
+          </button>
+          <ul class="govuk-service-navigation__list" id="navigation">
+            <li class="govuk-service-navigation__item govuk-service-navigation__item--active">
+              <a class="govuk-service-navigation__link" href="#" aria-current="true">
+                <strong class="govuk-service-navigation__active-fallback">Manage referrals</strong>
+              </a>
+            </li>
+            <li class="govuk-service-navigation__item">
+              <a class="govuk-service-navigation__link" href="find-a-claimant.html">
+                Find a claimant
+              </a>
+            </li>
+  
+            <li class="govuk-service-navigation__item">
+              <a class="govuk-service-navigation__link" href="caseload-or-status.html">
+                View caseload or status
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  </div>
+{% endblock %}
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+  
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+  <div class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <h1 class="govuk-heading-l">
+      Manage referrals
+    </h1>
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        
+        <div class="dwp-card dwp-card--clickable">
+          <div class="dwp-card__content">
+            <h2 class="dwp-card__heading dwp-heading-m">
+              <a class="dwp-card__link" href="new-referrals-to-assign.html">New referrals to assign (26)</a>
+            </h2>
+            <p class="dwp-card__description">Assign new referrals to a caseload</p>
+          </div>
+        </div>
+        <div class="dwp-card dwp-card--clickable">
+          <div class="dwp-card__content">
+            <h2 class="dwp-card__heading dwp-heading-m">
+              <a class="dwp-card__link" href="create-new-referral.html">Create a referral</a>
+            </h2>
+            <p class="dwp-card__description">Add a paper referral to the active referrals list</p>
+          </div>
+        </div>
+        <!-- <div class="dwp-card dwp-card--clickable">
+          <div class="dwp-card__content">
+            <h2 class="dwp-card__heading dwp-heading-m">
+              <a class="dwp-card__link" href="#">Create a referral</a>
+            </h2>
+            <p class="dwp-card__description">Add a paper referral to the active referrals list</p>
+          </div>
+        </div> -->
+       
+
+        <div class="dwp-card dwp-card--clickable">
+          <div class="dwp-card__content">
+            <h2 class="dwp-card__heading dwp-heading-m">
+              <a class="dwp-card__link" href="has-manage-appt/appointments.html">Manage appointments</a>
+            </h2>
+            <p class="dwp-card__description">Manage booked appointments </p>
+          </div>
+        </div>
+
+
+
+        <div class="dwp-card dwp-card--clickable">
+          <div class="dwp-card__content">
+            <h2 class="dwp-card__heading dwp-heading-m">
+              <a class="dwp-card__link" href="availability-management/location.html">Manage availability</a>
+            </h2>
+            <p class="dwp-card__description">Manage healthcare professionals (HCPs) and their appointment availability</p>
+          </div>
+        </div>
+        <div class="dwp-card dwp-card--clickable">
+          <div class="dwp-card__content">
+            <h2 class="dwp-card__heading dwp-heading-m">
+              <a class="dwp-card__link" href="incomplete-referral.html">View incomplete referrals</a>
+            </h2>
+            <p class="dwp-card__description">View a list of incomplete referrals</p>
+          </div>
+        </div>
+        <div class="dwp-card dwp-card--clickable">
+          <div class="dwp-card__content">
+            <h2 class="dwp-card__heading dwp-heading-m">
+              <a class="dwp-card__link" href="Unactioned-pip-alerts.html">Changes to PIP referrals</a>
+            </h2>
+            <p class="dwp-card__description">Confirm new referrals and view alerts for supporting evidence, documents and changes of circumstances added to existing referrals</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}
