@@ -3593,7 +3593,7 @@ p + .govuk-heading-s,
 .govuk-header__container {
   position: relative;
   margin-bottom: -10px;
-  padding-top: 10px;
+  padding-top: 0px;
   border-bottom: 10px solid #1d70b8;
 }
 .govuk-header__container:after {

@@ -7,14 +7,16 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 {% from "internal-service-header/macro.njk" import dwpHeader %}
 
 {% block header %}
-    {{
-      dwpHeader({
-          name: "Health Assessment Service",
-          serviceHref: '/',
-          container: true
-      })
+{{
+  dwpHeader({
+      serviceName: "Health Assessment Service",
+      serviceHref: '/',
+      action: "My profile",
+      actionHref: "account4.html",
+      container: true
+  })
+}}
       
-  }}
 
   
 {% endblock %}

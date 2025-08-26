@@ -1,0 +1,162 @@
+# Query: .govuk-header__container {
+# ContextLines: 1
+
+34 results - 21 files
+
+app/assets/sass/application.scss:
+  830    
+  831:     .govuk-header__container {
+  832        border-bottom: 0px;
+
+app/views/Content/Anxiety.html:
+  64  
+  65:   .govuk-header__container {
+  66      border-bottom: 0px;
+
+app/views/Content/Call.html:
+  64  
+  65:   .govuk-header__container {
+  66      border-bottom: 0px;
+
+app/views/Content/Contact.html:
+  64  
+  65:   .govuk-header__container {
+  66      border-bottom: 0px;
+
+app/views/Content/IDV.html:
+  64  
+  65:   .govuk-header__container {
+  66      border-bottom: 0px;
+
+app/views/Content/Medical conditions.html:
+  63  
+  64:   .govuk-header__container {
+  65      border-bottom: 0px;
+
+app/views/Content/No answer.html:
+  64  
+  65:   .govuk-header__container {
+  66      border-bottom: 0px;
+
+app/views/Content/Referral details.html:
+  58  
+  59:   .govuk-header__container {
+  60      border-bottom: 0px;
+
+app/views/Content/Timeline.html:
+  89  
+  90:   .govuk-header__container {
+  91      border-bottom: 0px;
+
+app/views/Content/Appointment booked_files/application.css:
+   3466  
+   3467: .govuk-header__container {
+   3468    position: relative;
+
+  11194  
+  11195: .govuk-header__container {
+  11196    border-bottom: 0px;
+
+  11737  
+  11738: .govuk-prototype-kit-error-page-header .govuk-header__container {
+  11739    border-color: #d4351c;
+
+app/views/Content/Booked appointments_files/application.css:
+   3466  
+   3467: .govuk-header__container {
+   3468    position: relative;
+
+  11194  
+  11195: .govuk-header__container {
+  11196    border-bottom: 0px;
+
+  11737  
+  11738: .govuk-prototype-kit-error-page-header .govuk-header__container {
+  11739    border-color: #d4351c;
+
+app/views/Content/Claimant details_files/application.css:
+  3778  
+  3779: .govuk-header__container {
+  3780    position: relative;
+
+  8091  
+  8092: .govuk-prototype-kit-error-page-header .govuk-header__container {
+  8093    border-color: #d4351c;
+
+  9138  
+  9139: .govuk-header__container {
+  9140    position: relative;
+
+app/views/Content/Claimant documents_files/application.css:
+  3461  
+  3462: .govuk-header__container {
+  3463    position: relative;
+
+app/views/Content/HAS HomePage_files/application.css:
+   3594  
+   3595: .govuk-header__container {
+   3596    position: relative;
+
+  10764  
+  10765: .govuk-header__container {
+  10766    border-bottom: 0;
+
+app/views/Content/HCP Review_files/application.css:
+  3592  
+  3593: .govuk-header__container {
+  3594    position: relative;
+
+  8369  
+  8370: .govuk-prototype-kit-error-page-header .govuk-header__container {
+  8371    border-color: #d4351c;
+
+app/views/Content/My open tasks_files/application.css:
+  3592  
+  3593: .govuk-header__container {
+  3594    position: relative;
+
+  8277  
+  8278: .govuk-prototype-kit-error-page-header .govuk-header__container {
+  8279    border-color: #d4351c;
+
+  8329  
+  8330: .govuk-header__container {
+  8331    border-bottom: 0px;
+
+app/views/Content/RecBuilder - DL justification_files/application.css:
+   3732  
+   3733: .govuk-header__container {
+   3734    position: relative;
+
+  11991  
+  11992: .govuk-prototype-kit-error-page-header .govuk-header__container {
+  11993    border-color: #d4351c;
+
+app/views/Content/RecBuilder_files/application.css:
+
+   3732  
+   3733: .govuk-header__container {
+   3734    position: relative;
+
+  11991  
+  11992: .govuk-prototype-kit-error-page-header .govuk-header__container {
+  11993    border-color: #d4351c;
+
+app/views/Content/Timeline_files/application.css:
+  4037  
+  4038: .govuk-header__container {
+  4039    position: relative;
+
+  8892  
+  8893: .govuk-header__container {
+  8894    border-bottom: 0;
+
+app/views/layouts/layout-key-details-assigned-extended.html:
+  65  
+  66:   .govuk-header__container {
+  67      border-bottom: 0px;
+
+assets/sass/application.scss:
+  372    
+  373:     .govuk-header__container {
+  374        border-bottom: 0px;

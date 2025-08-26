@@ -5,9 +5,43 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 {% endblock %}
 
 {% block header %}
+{% extends "layouts/main.html" %}
+{{
+  dwpHeader({
+      name: "Health Assessment Service",
+      serviceHref: '/',
+      container: true
+  })
+  
+}}
+<header class="govuk-header" role="banner" data-module="govuk-header">
+  <div class="govuk-header__container govuk-width-container" style="padding-top: 0px !important;">
+    <div class="govuk-header__content" style="padding-left: 0px !important;">
+      <button type="button" class="govuk-header__menu-button govuk-js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation" hidden="">Menu</button>
+      <nav>
+        <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation" style="padding-left: 0px !important;">
+          <li class="govuk-header__navigation-item govuk-header__navigation-item">
+            <a class="govuk-header__link" href="main-menu.html">
+              Manage referrals
+            </a>
+          </li>
+          <li class="govuk-header__navigation-item govuk-header__navigation-item">
+            <a class="govuk-header__link" href="find-a-claimant.html">
+              Find a claimant
+            </a>
+          </li>
+          <li class="govuk-header__navigation-item govuk-header__navigation-item">
+            <a class="govuk-header__link" href="caseload-or-status.html">
+            View a caseload or status
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
-  {% include "includes/blue-banner-book-assessment.html" %}
-  <!-- {% include "includes/quick-reference.html" %} -->
+{% include "includes/blue-banner-test.html" %}
 
 
 {% endblock %}
@@ -15,11 +49,10 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
 {% block content %}
 
 
-<div class="govuk-grid-row" style="margin-top: -40px;">
+<div class="govuk-grid-row" style="margin-top: 0px;">
     
     <div class="govuk-width-container">
-        <a href="claimant-detail-nav.html" class="govuk-back-link">Back</a>
-        <div class="column-full">
+              <div class="column-full">
           <nav class="navigation-secondary" style="margin-left: 0px !important; margin-right: 0px !important;">
             <ul>
                 <li>
@@ -862,7 +895,7 @@ Home – {{serviceName}} – GOV.UK Prototype Kit
             
               <div class="govuk-grid-column-one-quarter">
                 <div class="app-related-items" role="complementary">
-                  <h2 class="govuk-!-padding-top-2 govuk-heading-m" id="subsection-title">
+                  <h2 class="govuk-heading-m" id="subsection-title">
                     What you can do next
                   </h2>
       
