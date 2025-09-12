@@ -1,0 +1,42 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="account4.html" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+  
+    <h1 class="govuk-heading-l">
+      What is Jack Robert's email?            </h1>
+  
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="first_name">
+        Enter email
+      </label>
+    
+    
+      <input class="govuk-input govuk-input--width-70" id="first_name" name="firstName" type="text" autocomplete="off">
+    
+    </div>
+
+
+      <br><br>
+
+      
+      <a href="confirm-details-page-email.html"><button class="govuk-button" data-module="govuk-button">Confirm</button></a>
+    </div>
+  </div>
+
+  </main>
+</div>
+
+
+
+{% endblock %}

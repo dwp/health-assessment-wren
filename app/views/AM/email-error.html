@@ -1,0 +1,54 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Home – {{serviceName}} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="account4.html" class="govuk-back-link">Back</a>
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+  
+      <div class="govuk-error-summary" data-module="govuk-error-summary">
+        <div role="alert">
+          <h2 class="govuk-error-summary__title">
+            There is a problem
+          </h2>
+          <div class="govuk-error-summary__body">
+            <ul class="govuk-list govuk-error-summary__list">
+              <li>
+                <a href="#full-name-input">Enter a valid email address</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <h1 class="govuk-heading-l">What is Jack Robert's email?   </h1>
+      <div class="govuk-form-group govuk-form-group--error">
+        <label class="govuk-label" for="full-name-input">
+          Enter Email
+        </label>
+        <p id="full-name-input-error" class="govuk-error-message">
+          <span class="govuk-visually-hidden">Error:</span> Enter a valid email address
+        </p>
+        <input class="govuk-input govuk-input--error" id="full-name-input" name="name" type="text" aria-describedby="full-name-input-error" autocomplete="name">
+      </div>
+
+
+      <br><br>
+
+      
+      <a href="confirm-details-page-email.html"><button class="govuk-button" data-module="govuk-button">Confirm</button></a>
+    </div>
+  </div>
+
+  </main>
+</div>
+
+
+
+{% endblock %}
