@@ -12,11 +12,10 @@
 
 {% block content %}
 <div class="govuk-width-container ">
-
 <div class="govuk-grid-row">
 
 <div class="govuk-grid-column-three-quarters">
-
+  
 <h1 class="govuk-heading-l">
 Amy Gill's profile
 </h1>
@@ -33,24 +32,25 @@ Amy Gill's profile
     <dd class="govuk-summary-list__actions">
   </dd>
   </div>
-  <div class="govuk-summary-list__row">
+  <!-- <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-     Provider lot    </dt>
+     Provider lot
+    </dt>
     <dd class="govuk-summary-list__value">
      Lot 100
     </dd>
     <dd class="govuk-summary-list__actions">
   </dd>
-  </div>
+  </div> -->
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-     Healthcare professional
+      Healthcare professional
     </dt>
     <dd class="govuk-summary-list__value">
      
     </dd>
     <dd class="govuk-summary-list__actions">
-      <!-- <a class="govuk-link" href="question-hcp.html">Add </a> -->
+      <!-- <a class="govuk-link" href="">Change </a> -->
 
   </dd>
   
@@ -59,14 +59,13 @@ Amy Gill's profile
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-      Office location
+   Office location
     </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
-     
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <!-- <a class="govuk-link" href="agent-hub-location">Change </a> -->
+      <!-- <a class="govuk-link" href="location.html">Add </a> -->
   </dd>
 
 
@@ -77,27 +76,63 @@ Amy Gill's profile
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-      Skills    </dt>
+    Skills
+    </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
 
-      <ul class="govuk-list govuk-list--bullet">
-        <!-- <li style="white-space:nowrap;">PIP face to face (PIP F2F) </li>
+      <!-- <ul class="govuk-list govuk-list--bullet">
+        <li style="white-space:nowrap;">PIP face to face (PIP F2F) </li>
         <li style="white-space:nowrap;">  PIP telephone assessment (PIP TA)</li> 
-         -->
-      </ul>
+        
+      </ul> -->
       </dd>
       <dd class="govuk-summary-list__actions">
-        <!-- <a class="govuk-link" href="agent-hub-location">Change </a> -->
+        <!-- <a class="govuk-link" href="available-for.html">Add</a> -->
     </dd>
-      </div>
+    </div>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
 
+
+</div>
+<div class="govuk-grid-column-one-quarter">     
+
+  <div class="app-related-items" role="complementary">
   
-<hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
-
-
-<a href="question-hcp.html"><button class="govuk-button" data-module="govuk-button">Add profile details</button></a>
-
-
+  <div class="has-action-list">
+  <h2 class="govuk-heading-m" id="subsection-title">
+  What you can do next
+  </h2>
+  <nav aria-labelledby="subsection-title">
+  <ul class="govuk-list">
+  
+    <!-- <li>
+      
+        <a href="available-for.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Add skills</a>
+      
+      
+            </li> -->
+          
+        <li>
+      
+          <a href="question-hcp.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Add profile details</a>
+        
+        
+              </li>
+              <li>
+      
+                <!-- <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Return to main menu</a> -->
+              
+              
+                    </li>
+       
+        </ul>
+      </nav>
+    </div>
+  
+  </div>
+  
+  
+            </div>
 </div>
 
 {% endblock %}
