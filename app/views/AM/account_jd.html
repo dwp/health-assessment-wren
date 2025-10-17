@@ -3,27 +3,10 @@
 {% block pageTitle %}
   GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
-{% block beforeContent %}
-  <!-- {{ govukBackLink({
-  text: "Back",
-  href: "javascript:window.history.back()"
-}) }} -->
-{% endblock %}
+
 
 {% block content %}
 <div class="govuk-width-container ">
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-    <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-    Success
-    </h2>
-    </div>
-    <div class="govuk-notification-banner__content">
-    <h3 class="govuk-notification-banner__heading">
-      Jane Doe's profile has been updated
-    </h3>
-    </div>
-    </div>
 <div class="govuk-grid-row">
 
 <div class="govuk-grid-column-three-quarters">
@@ -46,7 +29,7 @@ Jane Doe's profile
   </div>
   <!-- <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-     Provider lot
+      Provider lot
     </dt>
     <dd class="govuk-summary-list__value">
      Lot 100
@@ -62,23 +45,21 @@ Jane Doe's profile
      Yes
     </dd>
     <dd class="govuk-summary-list__actions">
-      <!-- <a class="govuk-link" href="">Change </a> -->
-
+   
   </dd>
-  
   </div>
 
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-   Office location
+      Office location
     </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
       Birmingham, Handsworth
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <!-- <a class="govuk-link" href="location.html">Add </a> -->
+      <!-- <a class="govuk-link" href="agent-hub-location">Change </a> -->
   </dd>
 
 
@@ -94,15 +75,16 @@ Jane Doe's profile
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
 
       <ul class="govuk-list govuk-list--bullet">
-        <!-- <li style="white-space:nowrap;">PIP face to face (PIP F2F) </li> -->
-        <!-- <li style="white-space:nowrap;">  PIP telephone assessment (PIP TA)</li>  -->
+        <li style="white-space:nowrap;">PIP face to face </li>
+        <li style="white-space:nowrap;">  PIP telephone</li> 
         
       </ul>
       </dd>
       <dd class="govuk-summary-list__actions">
-        <a class="govuk-link" href="">Add</a>
+        <a class="govuk-link" href="">Change </a>
     </dd>
-    </div>
+      </div>
+
       <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
 
 
@@ -124,22 +106,16 @@ Jane Doe's profile
       
       
             </li> -->
-                 
-        <!-- <li>
-      
-          <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Manage appointments</a>
-        
-        
-              </li>    -->
+          
         <li>
       
-          <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Manage other profiles</a>
+          <a href="manage-profiles.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Manage other profiles</a>
         
         
               </li>
               <li>
       
-                <a href="" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Return to main menu</a>
+                <a href="main-menu.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Return to main menu</a>
               
               
                     </li>

@@ -23,184 +23,58 @@ Add HCP to Handsworth - GOV.UK prototype
    
 
 
-      <form class="form" action="account-amy-confirmed-2" method="post">
+      <form class="form" action="account-jd-confirmed" method="post">
        
         
 
             <h1 class="govuk-heading-l">
-Are you sure you want to remove this skill for Jane Doe?       </h1>
+Are you sure you want to update skills for Jane Doe?       </h1>
 
-<!-- <div id="contact-hint" class="govuk-hint">
-Jane Doe will no longer be able to complete F2F appointments and any existing appointments using this skill will need to be reassigned.</div> -->
-        <br>
-        <!-- <div class="govuk-form-group">
-        <label class="govuk-fieldset__legend--s govuk-!-font-weight-bold" for="HCP-name">
-          Name
-        </label>
-        <p class="govuk-hint"></p>
+<div class="govuk-warning-text">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-visually-hidden">Warning</span>
+Check that you have reassigned Jane Doe's appointments before you remove the matching skills.   </strong>
+</div>
 
-        <input class="govuk-input govuk-!-width-two-thirds" id="HCP-name" name="HCP-name" type="text" value="Amy Gill"></div>
-
-      
-         -->
-<!--         
-  <div class="govuk-form-group">
-          <label class="govuk-fieldset__legend--s govuk-!-font-weight-bold" for="HCP-name">
-          Email
-          </label>
-          <p class="govuk-hint"></p>
-  
-          <input class="govuk-input govuk-!-width-two-thirds" id="HCP-name" name="HCP-name" type="text" value="amygill@domain.gov.uk"></div>
-       
-          
-        -->
 
         <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-        <!-- <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden"> -->
         <div class="govuk-grid-column-one-half" style="padding-left:0px;">
-          <!-- <h2 class="govuk-heading-m">
-            What are they available for?
-          </h1> -->
-
+     
  
+<div class="govuk-width-container ">
 
-
-        <!-- 
-<br>
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-              {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
-  
-              {{ govukCheckboxes({
-                idPrefix: " ",
-                name: "Work location",
-                classes: "govuk-checkboxes--small",
-                fieldset: {
-                  legend: {
-                    text: "Work location",
-                    isPageHeading: true,
-                    classes: "govuk-fieldset__legend--m"
-                  }
-                },
-                items: [
-                  {
-                    value: "Birmingham, Handsworth",
-                    text: "Birmingham, Handsworth"
-                  },
-                  {
-                    value: "London, Tresco House",
-                    text: "London, Tresco House"
-                  }
-                ]
-              }) }}
-  
-            </div>
-            </fieldset>
-            </div> -->
-  
- 
-            <div class="govuk-width-container ">
-
-              <div class="govuk-grid-row">
+<div class="govuk-grid-row">
               
-              <div class="govuk-grid-column-three-quarters">
+<div class="govuk-grid-column-three-quarters">
               
        
-              
-              <dl class="govuk-summary-list">
-                <!-- <div class="govuk-summary-list__row">
-                  <dt class="govuk-summary-list__key">
-                   Telephone assessment (PIP TA)
-                  </dt>
-                  <dd class="govuk-summary-list__value">
-                    No
-                  </dd>
-                  <dd class="govuk-summary-list__actions">
-                  <a class="govuk-link" href="question-hcp2.html">Change </a>
-                </dd>
-                </div>           -->
-                <!-- <div class="govuk-summary-list__row">
-                  <dt class="govuk-summary-list__key">
-                   Email
-                  </dt>
-                  <dd class="govuk-summary-list__value">
-                    amy.gill@dwp.gov.uk
-                  </dd>
-                  <dd class="govuk-summary-list__actions">
-                </dd>
-                </div>
-                <div class="govuk-summary-list__row">
-                  <dt class="govuk-summary-list__key">
-                   LOT(s)
-                  </dt>
-                  <dd class="govuk-summary-list__value">
-                   LOT 100
-                  </dd>
-                  <dd class="govuk-summary-list__actions">
-                </dd>
-                </div> -->
-                <div class="govuk-summary-list__row">
-                  <dt class="govuk-summary-list__key">
-                  Face to Face (PIP F2F)                 </dt>
-                  <dd class="govuk-summary-list__value">
-                   Remove skill
-                  </dd>
-                  <dd class="govuk-summary-list__actions">
-                    <a class="govuk-link" href="question-location.html">Change </a>
-              
-                </dd>
-                
-                </div>
-              
-              
-                <!-- <div class="govuk-summary-list__row"> -->
-                  <!-- <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-                 Base location
-                  </dt> -->
-                  <!-- <dd class="govuk-summary-list__value" style="border-bottom:0px;"> -->
-                   <!-- Birmingham, Handsworth -->
-                  <!-- </dd> -->
-              
-                  <!-- <dd class="govuk-summary-list__actions"> -->
-                    <!-- <a class="govuk-link" href="">Change </a> -->
-                <!-- </dd> -->
-              
-              
-                <!-- </div> -->
-              
-              
-              
-              
-                <!-- <div class="govuk-summary-list__row">
-                  <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-                  Available for
-                  </dt>
-                  <dd class="govuk-summary-list__value" style="border-bottom:0px;">
-               -->
-                    <!-- <ul class="govuk-list govuk-list--bullet">
-                      <li style="white-space:nowrap;">PIP face to face (PIP F2F) </li>
-                      <li style="white-space:nowrap;">  PIP telephone assessment (PIP TA)</li> 
-                      
-                    </ul> -->
-                    <!-- </dd> -->
-                    <!-- <dd class="govuk-summary-list__actions"> -->
-                      <!-- <a class="govuk-link" href="">Change</a> -->
-                  <!-- </dd> -->
-                    <!-- </div> -->
-                    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
-              <div>
+     <p class="govuk-body">You are adding:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <!-- <li>Telephone assessment (PIP TA)</li> -->
+  <li>PIP Telephone</li>
+</ul>
+          
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
+
+              <p class="govuk-body">You are removing:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <!-- <li>Telephone assessment (PIP TA)</li> -->
+  <li>PIP Face to face</li>
+</ul>
+
+            
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
 
 
-        <div class="govuk-button-group">
-          <button class="govuk-button" data-module="govuk-button">Yes, remove skill</button>  
-          <a class="govuk-link" href="manage-profiles.html">Return to manage profiles</a>
+  <div class="govuk-button-group">
+          <button class="govuk-button" data-module="govuk-button">Yes, update skills</button>  
+          <a class="govuk-link" href="manage-profiles.html">No, return to profile</a>
         </div>
-    </form>
+        </div>
     </div>
     </div>
-
   </main>
 </div>
 

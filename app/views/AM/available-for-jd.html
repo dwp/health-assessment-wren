@@ -67,27 +67,27 @@ Add HCP to Handsworth - GOV.UK prototype
           <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
             {% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
 
-            {{ govukCheckboxes({
+             {{ govukCheckboxes({
               idPrefix: "PIP-skills",
               name: "PIP-skills",
               classes: "govuk-checkboxes--small",
               fieldset: {
                 legend: {
-                  text: "Personal Independence Payment",
+                  text: "Appointment",
                   isPageHeading: false,
                   classes: "govuk-fieldset__legend--s"
                 }
               },
               items: [
                 {
-                  value: "PIP TA",
-                  text: "Telephone assessment (PIP TA)",
-                  checked: true
+                  value: "PIP Telephone",
+                  text: "PIP Telephone",
+                  checked: false
                 },
                 {
                   value: "PIP F2F",
-                  text: "Face to face (PIP F2F)",
-                  checked: true
+                  text: "PIP Face to face",
+                  checked: false
                 }
               ]
             }) }}
