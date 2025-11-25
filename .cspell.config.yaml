@@ -5,7 +5,7 @@ $schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell
 
 version: "0.2"
 
-name: HAS-wren-prototype
+name: health-assessment-wren
 
 failFast: true
 noConfigSearch: true
