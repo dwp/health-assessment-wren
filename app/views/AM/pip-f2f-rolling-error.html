@@ -19,21 +19,22 @@
   <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
   
 
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-      <h1 class="govuk-fieldset__heading">
+<div class="govuk-form-group govuk-form-group--error">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="cost-per-item-error">
 Rolling level for PIP face to face assessments
-   </h1>
-    </legend>
-        <p>
-      Select frequency
-        </p>
-          <div class="govuk-input__wrapper">
+    </label>
+  </h1>
+  <p>Select frequency </p>
+  <p id="cost-per-item-error-error" class="govuk-error-message">
+    <span class="govuk-visually-hidden">Error:</span> Enter a number between 1 and 3
+  </p>
+  <div class="govuk-input__wrapper">
     <div class="govuk-input__prefix" aria-hidden="true">Once every</div>
-    <input class="govuk-input govuk-input--width-5" id="cost-per-item" name="costPerItem" type="text" spellcheck="false">
+    <input class="govuk-input govuk-input--width-5 govuk-input--error" id="cost-per-item-error" name="costPerItemError" type="text" spellcheck="false" aria-describedby="cost-per-item-error-error">
     <div class="govuk-input__suffix" aria-hidden="true">months</div>
-
+  </div>
+</div>
     <!-- <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england"  >
@@ -71,11 +72,8 @@ Rolling level for PIP face to face assessments
           10%
         </label>
       </div> -->
-</div>
-      <br><br>
-
       
-      <a href="confirm-frequency-change4.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+      <a href="quality-review-confirmed.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
     </div>
   </div>
 

@@ -12,22 +12,28 @@
 
 {% block content %}
 
-
-<div class="govuk-grid-row" style="margin-top: -40px;">
-  <div class="govuk-grid-column-full">
-
-  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form id="find-a-claimant-form" class="form" action="pip-f2f-rate.html">
+        <input type="hidden" name="_csrf" value="">
+        <fieldset class="govuk-fieldset">
+  
+  <legend class="govuk-fieldset__legend govuk-caption-l">
+  
+    <h1 class="govuk-fieldset__heading">
+      <span class="govuk-caption-l">Quality review level</span>
+    </h1>
+  
+  </legend>
   
 
+</fieldset>
+
 <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-      <h1 class="govuk-fieldset__heading">
-Select quality review level     </h1>
-    </legend>
-        <p>
-      Select PIP face to face level
-        </p>
+  <label class="govuk-label govuk-label--l" for="search-term">
+   Select PIP face to face level
+  </label>
+
     <!-- <div class="govuk-radios" data-module="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england" checked>
@@ -35,6 +41,12 @@ Select quality review level     </h1>
           Approval
         </label>
       </div> -->
+    <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
+        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+          Approval
+        </label>
+      </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
         <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
@@ -57,8 +69,8 @@ Select quality review level     </h1>
   </fieldset>
 </div>
 
-      
-      <a href="pip-f2f-targeted-support.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+      <a href="pip-f2f-rate.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+      <!-- <a href="pip-f2f-targeted-support.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a> -->
     </div>
   </div>
 

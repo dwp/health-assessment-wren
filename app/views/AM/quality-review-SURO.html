@@ -4,33 +4,23 @@
   GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 {% block beforeContent %}
-
+  {{ govukBackLink({
+  text: "Back",
+  href: "main-menu8"
+}) }}
 {% endblock %}
 
 {% block content %}
-<div class="govuk-width-container ">
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-    <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-    Success
-    </h2>
-    </div>
-    <div class="govuk-notification-banner__content">
-    <h3 class="govuk-notification-banner__heading">
-      Quality review settings have been updated
-    </h3>
-    </div>
-    </div>
-<h1 class="govuk-heading-xl">
-Quality review settings
-</h1>
+
 
 <div class="govuk-width-container ">
 
 <div class="govuk-grid-row">
 
 <div class="govuk-grid-column-three-quarters">
-
+<h1 class="govuk-heading-xl">
+Quality review settings
+</h1>
   <h2 class="govuk-heading-l">
 Appointment skills
 </h2>
@@ -55,10 +45,10 @@ PIP face to face
       Post approval
     </dt>
     <dd class="govuk-summary-list__value">
-     50%
+     25%
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="pip-f2f-post-approval.html">Change </a> -->
   </dd>   
   </dd>
   </div>
@@ -73,7 +63,7 @@ PIP face to face
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="pip-f2f-rolling.html">Change </a>
+      <!-- <a class="govuk-link" href="pip-f2f-rolling.html">Change </a> -->
   </dd>
   </div>
   <div class="govuk-summary-list__row">
@@ -81,11 +71,11 @@ PIP face to face
       Targeted support
     </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
-      50%
+      100%
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="pip-f2f-targeted.html">Change </a>
+      <!-- <a class="govuk-link" href="pip-f2f-targeted.html">Change </a> -->
   </dd>
 </dl>
 <dl class="govuk-summary-list">
@@ -111,7 +101,7 @@ PIP telephone
      25%
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>   
   </dd>
   </div>
@@ -126,7 +116,7 @@ PIP telephone
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
   </div>
   <div class="govuk-summary-list__row">
@@ -138,7 +128,7 @@ PIP telephone
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
 </dl>
 <dl class="govuk-summary-list">
@@ -164,7 +154,7 @@ PIP video
      25%
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>   
   </dd>
   </div>
@@ -179,7 +169,7 @@ PIP video
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
   </div>
   <div class="govuk-summary-list__row">
@@ -191,7 +181,7 @@ PIP video
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
 </dl>
     <hr class="govuk-section-break govuk-section-break--l govuk-section-break--invisible">
@@ -222,7 +212,7 @@ PIP PBR
      25%
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>   
   </dd>
   </div>
@@ -237,7 +227,7 @@ PIP PBR
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
   </div>
   <div class="govuk-summary-list__row">
@@ -249,7 +239,7 @@ PIP PBR
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
 </dl>
 <dl class="govuk-summary-list">
@@ -275,7 +265,7 @@ PIP SREL
      25%
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>   
   </dd>
   </div>
@@ -290,7 +280,7 @@ PIP SREL
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
   </div>
   <div class="govuk-summary-list__row">
@@ -302,7 +292,7 @@ PIP SREL
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
 </dl>
 <dl class="govuk-summary-list">
@@ -328,7 +318,7 @@ PIP HCP review
      25%
     </dd>
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>   
   </dd>
   </div>
@@ -343,7 +333,7 @@ PIP HCP review
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
   </div>
   <div class="govuk-summary-list__row">
@@ -355,7 +345,7 @@ PIP HCP review
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <a class="govuk-link" href="">Change </a>
+      <!-- <a class="govuk-link" href="">Change </a> -->
   </dd>
 </dl>
 </div>
@@ -381,11 +371,6 @@ PIP HCP review
         <li>
       
                 <a href="preset-levels.html" class="govuk-link govuk-link--no-visited-state">View preset levels</a>        
-        
-              </li>
-               <li>
-      
-                <a href="main-menu8.html" class="govuk-link govuk-link--no-visited-state">Return to main menu</a>        
         
               </li>
         </ul>

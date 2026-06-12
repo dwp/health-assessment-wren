@@ -6,7 +6,7 @@
 {% block beforeContent %}
   {{ govukBackLink({
   text: "Back",
-  href: "javascript:window.history.back()"
+  href: "quality-review-jd"
 }) }}
 {% endblock %}
 
@@ -23,43 +23,36 @@
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
-Targeted support for PIP face to face assessments    </h1>
+Targeted support for PIP face to face assessments
+   </h1>
     </legend>
-              {{ govukInput({
-  label: {
-    text: "Select frequency"
-  },
-  suffix: {
-    text: "%"
-  },
-  classes: "govuk-input--width-5",
-  id: "percentage",
-  name: "percentage",
-  inputmode: "numeric"
-}) }}
-            <!-- <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
-        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-          30%
-        </label>
-      </div> -->
-            <!-- <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
-        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-          20%
-        </label>
-      </div> -->
-      <!-- <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
-        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-          10%
-        </label>
-      </div> -->
 
-      <br><br>
+    <!-- <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england" checked>
+        <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+          Approval
+        </label>
+      </div> -->
+            <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
+        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+          Quality review settings frequency
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
+        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+          Custom frequency
+        </label>
+      </div>
+ 
+          
+  </fieldset>
+</div>
 
       
-      <a href="confirm-frequency-change3.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+      <a href="pip-f2f-targeted-profile.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
     </div>
   </div>
 

@@ -1,0 +1,47 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row" style="margin-top: -40px;">
+  <div class="govuk-grid-column-full">
+
+  <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
+  
+<div class="govuk-form-group govuk-form-group--error">
+  <h1 class="govuk-label-wrapper">
+    <label class="govuk-label govuk-label--l" for="cost-per-item-error">
+Targeted support for PIP face to face assessments 
+    </label>
+  </h1>
+    <p>Select frequency </p>
+  <p id="cost-per-item-error-error" class="govuk-error-message">
+    <span class="govuk-visually-hidden">Error:</span> Enter a number between 0 and 100
+  </p>
+  <div class="govuk-input__wrapper">
+    <input class="govuk-input govuk-input--width-5 govuk-input--error" id="cost-per-item-error" name="costPerItemError" type="text" spellcheck="false" aria-describedby="cost-per-item-error-error">
+    <div class="govuk-input__suffix" aria-hidden="true">%</div>
+  </div>
+</div>
+
+<div>
+      <a href="confirm-frequency-change.html"><button class="govuk-button" data-module="govuk-button">Continue</button></a>
+    </div>
+  </div>
+
+  </main>
+</div>
+
+
+
+{% endblock %}

@@ -6,7 +6,7 @@
 {% block beforeContent %}
   {{ govukBackLink({
   text: "Back",
-  href: "pip-f2f-change2"
+  href: "javascript:window.history.back()"
 }) }}
 {% endblock %}
 
@@ -25,34 +25,18 @@
       <h1 class="govuk-fieldset__heading">
 Targeted support for PIP face to face assessments    </h1>
     </legend>
-        <p>
-      Select frequency
-        </p>
-    <div class="govuk-radios" data-module="govuk-radios">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive" name="whereDoYouLive" type="radio" value="england" checked>
-        <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
-          100%
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
-        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-          50%
-        </label>
-      </div>
-            <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
-        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-          25%
-        </label>
-      </div>
-                  <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
-        <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
-          1%
-        </label>
-      </div>
+              {{ govukInput({
+  label: {
+    text: "Select frequency"
+  },
+  suffix: {
+    text: "%"
+  },
+  classes: "govuk-input--width-5",
+  id: "percentage",
+  name: "percentage",
+  inputmode: "numeric"
+}) }}
             <!-- <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="whereDoYouLive-2" name="whereDoYouLive" type="radio" value="scotland" >
         <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
@@ -71,9 +55,7 @@ Targeted support for PIP face to face assessments    </h1>
           10%
         </label>
       </div> -->
-    </div>
-  </fieldset>
-</div>
+
       <br><br>
 
       
