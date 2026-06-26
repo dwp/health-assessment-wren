@@ -1,0 +1,40 @@
+{% extends "layouts/main-am.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <div>
+        <div class="govuk-width-container">
+          <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-l">Onboarding successful</h1>
+                <p class="govuk-body">
+                  You have been succesfully onboarded onto the Health Assessment Service. </p>               
+                <!-- </p>
+               <p>To get assigned to a supplier, contact your line manager.</p>  -->
+                <!-- <p class="govuk-body">
+                  <a class="govuk-link" href="main-menu.html">Return to HAS main menu</a> 
+                </p> -->
+                <hr class="govuk-section-break govuk-section-break--m govuk-section-break--hidden">
+
+                <div>
+                      <a href=""><button class="govuk-button" data-module="govuk-button">Continue to my profile</button></a>
+</div>
+              </div>
+            </div>
+          </main>
+        </div>
+
+    </div>
+  </div>
+
+{% endblock %}
