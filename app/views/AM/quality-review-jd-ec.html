@@ -4,32 +4,21 @@
   GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 {% block beforeContent %}
-  <!-- {{ govukBackLink({
+  {{ govukBackLink({
   text: "Back",
   href: "javascript:window.history.back()"
-}) }} -->
+}) }}
 {% endblock %}
 
 {% block content %}
 <div class="govuk-width-container ">
-  <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-    <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-    Success
-    </h2>
-    </div>
-    <div class="govuk-notification-banner__content">
-    <h3 class="govuk-notification-banner__heading">
-      Amy Gill's profile details have been updated
-    </h3>
-    </div>
-    </div>
+
 <div class="govuk-grid-row">
 
 <div class="govuk-grid-column-three-quarters">
-  
+
 <h1 class="govuk-heading-l">
-Amy Gill's profile
+Jane Doe's profile
 </h1>
 
 <dl class="govuk-summary-list">
@@ -39,14 +28,14 @@ Amy Gill's profile
      Email
     </dt>
     <dd class="govuk-summary-list__value">
-      amy.gill@dwp.gov.uk
+      jane.doe@dwp.gov.uk
     </dd>
     <dd class="govuk-summary-list__actions">
   </dd>
   </div>
   <!-- <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key">
-     Provider lot
+      Provider lot
     </dt>
     <dd class="govuk-summary-list__value">
      Lot 100
@@ -62,32 +51,32 @@ Amy Gill's profile
      Yes
     </dd>
     <dd class="govuk-summary-list__actions">
-      <!-- <a class="govuk-link" href="">Change </a> -->
-
+   
   </dd>
-  
   </div>
 
 
   <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-   Office location
+      Office location
     </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
-      Birmingham, Handsworth
+      Handsworth
     </dd>
 
     <dd class="govuk-summary-list__actions">
-      <!-- <a class="govuk-link" href="location.html">Add </a> -->
+      <!-- <a class="govuk-link" href="agent-hub-location">Change </a> -->
   </dd>
 
 
   </div>
 
 
-<div class="govuk-summary-list__row">
+
+
+  <div class="govuk-summary-list__row">
     <dt class="govuk-summary-list__key" style="border-bottom:0px;">
-    Appointment skills
+    Consultation skills
     </dt>
     <dd class="govuk-summary-list__value" style="border-bottom:0px;">
 
@@ -222,12 +211,7 @@ Quality review level
                 <a href="" class="govuk-link govuk-link--no-visited-state">Return to main menu</a>        
         
               </li>
-                                  <li>
-      
-                <a href="remove-confirmation.html" id="action_update_status" class="govuk-link govuk-link--no-visited-state">Remove profile</a>
-              
-              
-                    </li>
+
        
         </ul>
       </nav>
@@ -240,4 +224,5 @@ Quality review level
 </div>
 
 </div>
+
 {% endblock %}
